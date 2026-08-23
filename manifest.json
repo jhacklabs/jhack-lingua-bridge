@@ -1,9 +1,9 @@
 {
   "id": "jhack-lingua-bridge",
   "name": "Jhack Lingua Bridge",
-  "version": "3.5.0",
+  "version": "3.6.0",
   "minAppVersion": "1.7.0",
-  "description": "Offline-first English \u21c4 Persian lookup for Markdown, PDF and EPUB, with a built-in Leitner spaced-repetition system and cross-platform pronunciation. No companion plugin required.",
+  "description": "Offline-first English ⇌ Persian lookup for Markdown, PDF and EPUB, with a built-in Leitner spaced-repetition system, audio player, word highlighting, similar words suggestions and cross-platform pronunciation. No companion plugin required.",
   "author": "JHack",
   "isDesktopOnly": false
 }

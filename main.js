@@ -1,6 +1,7 @@
-const { Plugin, Modal, Notice, PluginSettingTab, Setting, MarkdownView, ItemView, requestUrl } = require("obsidian");
+const { Plugin, Modal, Notice, PluginSettingTab, Setting, MarkdownView, ItemView, requestUrl, Editor, editorEditor, Platform } = require("obsidian");
 
 const VIEW_TYPE_DASHBOARD = "jhack-dashboard-view";
+const VIEW_TYPE_PLAYER = "jhack-player-view";
 
 /* ---------------------------------------------------------------------- *
  *  Defaults
@@ -22,7 +23,13 @@ const DEFAULTS = {
   onboarded: false,
   streak: 0,
   lastStudyDay: "",
-  history: [] // recently looked-up words, most recent first
+  history: [], // recently looked-up words, most recent first
+  cards: {},
+  audioFilePath: "",
+  audioVolume: 1.0,
+  highlightLeitnerWords: true,
+  singleClickSelect: true,
+  showSimilarWords: true
 };
 
 const THEMES = {
