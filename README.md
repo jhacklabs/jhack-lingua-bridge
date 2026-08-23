@@ -1,8 +1,21 @@
-# Jhack Lingua Bridge — v3.5.0
+# Jhack Lingua Bridge — v3.6.0
 
 Offline-first English ⇄ Persian lookup for Markdown, PDF and EPUB — now with its
-**own built-in Leitner spaced-repetition system** and **cross-platform pronunciation**.
-No companion plugin needed.
+**own built-in Leitner spaced-repetition system**, **cross-platform pronunciation**,
+**similar words suggestions**, and **audio player**. No companion plugin needed.
+
+## What's new in 3.6.0
+
+- **Similar words suggestions.** When a word isn't found in the dictionary, Jhack Lingua
+  now suggests similar words from the offline index, helping you find what you were
+  actually looking for instead of just returning empty results.
+- **Audio player improvements.** The pronunciation UI has been refined with better
+  feedback and controls, making it easier to hear words repeatedly during study sessions.
+- **Word highlighting enhancements.** Selected words are now highlighted more clearly
+  in the lookup modal, improving readability and reducing confusion when reviewing
+  definitions and translations.
+- **Performance optimizations.** Dictionary lookups and UI rendering have been further
+  optimized for faster response times, especially on lower-end devices.
 
 ## What's new in 3.5.0
 
