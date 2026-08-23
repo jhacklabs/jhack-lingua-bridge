@@ -188,6 +188,90 @@
 .jhack-box-count { font-size: 0.7em; margin-top: 0.2em; }
 .jhack-box-tick { font-size: 0.65em; color: var(--text-faint); }
 
+/* Search input for large decks */
+.jhack-search-input:focus {
+  outline: 2px solid var(--jhack-accent);
+  border-color: transparent;
+}
+
+/* Daily progress chart */
+.jhack-progress-chart {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.4em;
+  height: 100px;
+  margin: 0.6em 0 1em;
+  padding: 0.5em;
+  background: var(--background-secondary);
+  border-radius: var(--jhack-radius);
+}
+.jhack-progress-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  flex: 1;
+  height: 100%;
+  gap: 2px;
+}
+.jhack-progress-bar {
+  width: 35%;
+  border-radius: 3px 3px 0 0;
+  min-height: 2px;
+  transition: height 0.2s ease;
+}
+.jhack-progress-added {
+  background: #22c55e;
+}
+.jhack-progress-reviewed {
+  background: #3b82f6;
+}
+.jhack-progress-date {
+  font-size: 0.6em;
+  color: var(--text-faint);
+  margin-top: 0.2em;
+}
+.jhack-progress-legend {
+  display: flex;
+  align-items: center;
+  gap: 0.8em;
+  font-size: 0.75em;
+  margin-bottom: 1em;
+}
+.jhack-legend-added { color: #22c55e; font-weight: bold; }
+.jhack-legend-reviewed { color: #3b82f6; font-weight: bold; }
+
+/* Card list with search */
+.jhack-card-list {
+  max-height: 400px;
+  overflow-y: auto;
+  background: var(--background-secondary);
+  border-radius: var(--jhack-radius);
+  padding: 0.5em;
+  margin: 0.5em 0;
+}
+.jhack-card-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5em 0.7em;
+  border-radius: 8px;
+  margin: 0.2em 0;
+  transition: background 0.15s ease;
+}
+.jhack-card-row:hover {
+  background: var(--background-modifier-border);
+}
+.jhack-card-word {
+  font-weight: 600;
+  flex: 1;
+}
+.jhack-card-due {
+  font-size: 0.75em;
+  color: var(--text-muted);
+  margin-left: 0.5em;
+}
+
 /* ---------- Settings ---------- */
 .jhack-settings h2 { margin-top: 1.4em; border-bottom: 1px solid var(--background-modifier-border); padding-bottom: 0.3em; }
 .jhack-status {

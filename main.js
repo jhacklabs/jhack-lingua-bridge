@@ -29,7 +29,9 @@ const DEFAULTS = {
   audioVolume: 1.0,
   highlightLeitnerWords: true,
   singleClickSelect: true,
-  showSimilarWords: true
+  showSimilarWords: true,
+  dailyProgress: {}, // { "2024-01-15": { added: 5, reviewed: 12 } }
+  pronunciationPractice: false
 };
 
 const THEMES = {
@@ -300,6 +302,181 @@ class ReviewModal extends Modal {
 }
 
 /* ---------------------------------------------------------------------- *
+ *  Pronunciation Practice Modal
+ * ---------------------------------------------------------------------- */
+
+class PronunciationPracticeModal extends Modal {
+  constructor(app, plugin, queue, recognition) {
+    super(app);
+    this.plugin = plugin;
+    this.queue = queue.slice(0, 20); // Limit to 20 cards per session
+    this.index = 0;
+    this.recognition = recognition;
+    this.scores = { correct: 0, total: 0 };
+    this.setupRecognition();
+  }
+
+  setupRecognition() {
+    this.recognition.onresult = (event) => {
+      const spoken = event.results[0][0].transcript.toLowerCase().trim();
+      const target = this.card.word.toLowerCase();
+      this.checkPronunciation(spoken, target);
+    };
+
+    this.recognition.onerror = (event) => {
+      console.error("Speech recognition error:", event.error);
+      new Notice("Could not hear you. Please try again.");
+      this.render();
+    };
+
+    this.recognition.onend = () => {
+      // Recognition stopped, re-enable button
+      const btn = this.contentEl.querySelector(".jhack-mic-btn");
+      if (btn) btn.disabled = false;
+    };
+  }
+
+  get card() { return this.queue[this.index]; }
+
+  checkPronunciation(spoken, target) {
+    this.scores.total++;
+    
+    // Simple similarity check - remove punctuation and compare
+    const cleanSpoken = spoken.replace(/[^a-z]/g, '');
+    const cleanTarget = target.replace(/[^a-z]/g, '');
+    
+    // Check if spoken contains the target or is very similar
+    const isCorrect = cleanSpoken === cleanTarget || 
+                      cleanSpoken.includes(cleanTarget) || 
+                      cleanTarget.includes(cleanSpoken);
+    
+    if (isCorrect) {
+      this.scores.correct++;
+      new Notice(`✓ Correct! You said "${spoken}"`, 3000);
+    } else {
+      new Notice(`Try again! Target: "${target}", You said: "${spoken}"`, 4000);
+    }
+    
+    // Move to next card after a short delay
+    setTimeout(() => {
+      this.index++;
+      if (this.index >= this.queue.length) {
+        this.renderDone();
+      } else {
+        this.render();
+      }
+    }, 1500);
+  }
+
+  startListening() {
+    const btn = this.contentEl.querySelector(".jhack-mic-btn");
+    if (btn) btn.disabled = true;
+    
+    try {
+      this.recognition.start();
+    } catch (e) {
+      console.error("Failed to start recognition:", e);
+      new Notice("Could not start microphone. Please check permissions.");
+      btn.disabled = false;
+    }
+  }
+
+  onOpen() {
+    this.contentEl.addClass("jhack-modal", "jhack-pronunciation-modal");
+    this.scope.register([], "p", () => this.card && this.plugin.speak(this.card.word));
+    this.render();
+  }
+
+  render() {
+    const c = this.contentEl;
+    c.empty();
+    if (!this.card) { this.renderDone(); return; }
+
+    c.createDiv({ cls: "jhack-brand" }, (b) => {
+      b.createSpan({ text: "Jhack", cls: "jhack-brand-strong" });
+      b.createSpan({ text: " Pronunciation Practice 🎤" });
+    });
+
+    const progress = c.createDiv({ cls: "jhack-progress" });
+    const pct = Math.round((this.index / this.queue.length) * 100);
+    progress.createDiv({ cls: "jhack-progress-fill" }).style.width = pct + "%";
+    c.createDiv({ text: `${this.index + 1} / ${this.queue.length}`, cls: "jhack-progress-label" });
+
+    const card = c.createDiv({ cls: "jhack-flip-card" });
+    card.createEl("h1", { text: this.card.word, cls: "jhack-flip-word" });
+    if (this.card.data.phonetic) {
+      card.createDiv({ text: `/${this.card.data.phonetic}/`, cls: "jhack-phonetic" });
+    }
+    if (this.card.data.translation) {
+      card.createDiv({ text: this.card.data.translation, cls: "jhack-box-body jhack-fa" });
+    }
+
+    const micBtn = c.createEl("button", { 
+      text: "🎤 Speak now", 
+      cls: "jhack-btn jhack-mic-btn jhack-btn-cta" 
+    });
+    micBtn.style.fontSize = "1.2em";
+    micBtn.style.padding = "1em 2em";
+    micBtn.onclick = () => this.startListening();
+
+    const hint = c.createDiv({ 
+      text: "Say the word clearly into your microphone", 
+      cls: "jhack-subtle",
+      style: "text-align: center; margin-top: 0.5em;"
+    });
+
+    const bottom = c.createDiv({ cls: "jhack-actions jhack-actions-center" });
+    const speak = bottom.createEl("button", { text: "🔊 Hear it", cls: "jhack-btn" });
+    speak.onclick = () => this.plugin.speak(this.card.word);
+    
+    const skip = bottom.createEl("button", { text: "Skip", cls: "jhack-btn jhack-btn-ghost" });
+    skip.onclick = () => {
+      this.index++;
+      if (this.index >= this.queue.length) this.renderDone();
+      else this.render();
+    };
+  }
+
+  renderDone() {
+    const c = this.contentEl;
+    c.empty();
+    c.createDiv({ cls: "jhack-brand" }, (b) => {
+      b.createSpan({ text: "Jhack", cls: "jhack-brand-strong" });
+      b.createSpan({ text: " Practice Complete!" });
+    });
+    
+    const accuracy = this.scores.total > 0 
+      ? Math.round((this.scores.correct / this.scores.total) * 100) 
+      : 0;
+    
+    c.createEl("h2", { text: `Great job! 🎉` });
+    c.createDiv({ cls: "jhack-summary" }, (summary) => {
+      summary.createDiv({ cls: "jhack-summary-row" }, (row) => {
+        row.createSpan({ text: "Words practiced" });
+        row.createSpan({ text: String(this.scores.total), cls: "jhack-summary-count" });
+      });
+      summary.createDiv({ cls: "jhack-summary-row" }, (row) => {
+        row.createSpan({ text: "Correct pronunciations" });
+        row.createSpan({ text: String(this.scores.correct), cls: "jhack-summary-count" });
+      });
+      summary.createDiv({ cls: "jhack-summary-row" }, (row) => {
+        row.createSpan({ text: "Accuracy" });
+        row.createSpan({ text: `${accuracy}%`, cls: "jhack-summary-count" });
+      });
+    });
+    
+    const actions = c.createDiv({ cls: "jhack-actions" });
+    const close = actions.createEl("button", { text: "Close", cls: "jhack-btn jhack-btn-cta" });
+    close.onclick = () => this.close();
+  }
+
+  onClose() { 
+    this.contentEl.empty();
+    try { this.recognition.stop(); } catch (e) {}
+  }
+}
+
+/* ---------------------------------------------------------------------- *
  *  Dashboard sidebar view
  * ---------------------------------------------------------------------- */
 
@@ -329,6 +506,28 @@ class DashboardView extends ItemView {
     const due = this.plugin.getDueCards().length;
     const total = list.length;
 
+    // Search box for large decks
+    if (total > 20) {
+      const searchBox = c.createEl("input", { 
+        type: "text", 
+        placeholder: "🔍 Search cards...", 
+        cls: "jhack-search-input" 
+      });
+      searchBox.style.width = "100%";
+      searchBox.style.padding = "0.5em";
+      searchBox.style.marginBottom = "0.5em";
+      searchBox.style.borderRadius = "var(--jhack-radius)";
+      searchBox.style.border = "1px solid var(--background-modifier-border)";
+      
+      let searchTimeout;
+      searchBox.oninput = () => {
+        clearTimeout(searchTimeout);
+        searchTimeout = setTimeout(() => {
+          this.filterCards(searchBox.value.toLowerCase());
+        }, 300);
+      };
+    }
+
     const stats = c.createDiv({ cls: "jhack-dash-stats" });
     this.statCard(stats, due, "Due today");
     this.statCard(stats, total, "Total cards");
@@ -340,6 +539,9 @@ class DashboardView extends ItemView {
 
     const lookupBtn = c.createEl("button", { text: "🔎 Lookup a word", cls: "jhack-btn jhack-full" });
     lookupBtn.onclick = () => this.plugin.runLookup();
+
+    // Daily progress chart
+    this.renderProgressChart(c);
 
     c.createEl("h3", { text: "Leitner boxes" });
     const boxRow = c.createDiv({ cls: "jhack-box-chart" });
@@ -355,12 +557,104 @@ class DashboardView extends ItemView {
       col.createDiv({ text: "B" + (i + 1), cls: "jhack-box-tick" });
     });
 
+    // Card list with search results container
+    if (total > 0) {
+      c.createEl("h3", { text: "Your Cards", cls: "jhack-cards-header" });
+      this.cardListContainer = c.createDiv({ cls: "jhack-card-list" });
+      this.renderCardList(list.slice(0, 50)); // Show first 50 by default
+    }
+
     if (this.plugin.settings.history?.length) {
       c.createEl("h3", { text: "Recent lookups" });
       const hist = c.createDiv({ cls: "jhack-chips" });
       this.plugin.settings.history.slice(0, 12).forEach((w) => {
         const chip = hist.createSpan({ text: w, cls: "jhack-chip jhack-chip-clickable" });
         chip.onclick = () => new LookupModal(this.app, this.plugin, w).open();
+      });
+    }
+  }
+
+  renderProgressChart(container) {
+    const progress = this.plugin.settings.dailyProgress || {};
+    const today = todayStr();
+    
+    // Get last 7 days
+    const days = [];
+    for (let i = 6; i >= 0; i--) {
+      const date = addDays(today, -i);
+      const data = progress[date] || { added: 0, reviewed: 0 };
+      days.push({ date, ...data });
+    }
+
+    container.createEl("h3", { text: "Daily Progress (last 7 days)" });
+    const chart = container.createDiv({ cls: "jhack-progress-chart" });
+    
+    const maxVal = Math.max(1, ...days.map(d => Math.max(d.added, d.reviewed)));
+    
+    days.forEach(day => {
+      const dayCol = chart.createDiv({ cls: "jhack-progress-col" });
+      
+      // Added bar
+      const addedBar = dayCol.createDiv({ cls: "jhack-progress-bar jhack-progress-added" });
+      addedBar.style.height = Math.max(2, (day.added / maxVal) * 60) + "px";
+      addedBar.title = `Added: ${day.added}`;
+      
+      // Reviewed bar
+      const reviewedBar = dayCol.createDiv({ cls: "jhack-progress-bar jhack-progress-reviewed" });
+      reviewedBar.style.height = Math.max(2, (day.reviewed / maxVal) * 60) + "px";
+      reviewedBar.title = `Reviewed: ${day.reviewed}`;
+      
+      // Date label
+      const dateLabel = dayCol.createDiv({ 
+        text: day.date.slice(5), // MM-DD
+        cls: "jhack-progress-date" 
+      });
+    });
+    
+    // Legend
+    const legend = container.createDiv({ cls: "jhack-progress-legend" });
+    legend.createSpan({ text: "■ ", cls: "jhack-legend-added" });
+    legend.createSpan({ text: "Added  ", cls: "jhack-subtle" });
+    legend.createSpan({ text: "■ ", cls: "jhack-legend-reviewed" });
+    legend.createSpan({ text: "Reviewed", cls: "jhack-subtle" });
+  }
+
+  filterCards(query) {
+    if (!this.cardListContainer) return;
+    
+    const cards = this.plugin.settings.cards || {};
+    const list = Object.values(cards);
+    const filtered = query 
+      ? list.filter(c => c.word.toLowerCase().includes(query))
+      : list;
+    
+    this.renderCardList(filtered.slice(0, 100));
+  }
+
+  renderCardList(cards) {
+    this.cardListContainer.empty();
+    
+    if (cards.length === 0) {
+      this.cardListContainer.createDiv({ text: "No cards found.", cls: "jhack-subtle" });
+      return;
+    }
+    
+    cards.forEach(card => {
+      const row = this.cardListContainer.createDiv({ cls: "jhack-card-row" });
+      row.createSpan({ text: card.word, cls: "jhack-card-word" });
+      row.createSpan({ text: `Box ${card.box + 1}`, cls: "jhack-badge jhack-badge-box" });
+      row.createSpan({ text: `Due: ${card.due}`, cls: "jhack-card-due" });
+      
+      row.style.cursor = "pointer";
+      row.onclick = () => {
+        new LookupModal(this.app, this.plugin, card.word, card.context).open();
+      };
+    });
+    
+    if (cards.length === 100) {
+      this.cardListContainer.createDiv({ 
+        text: "... and more. Use search to find specific cards.", 
+        cls: "jhack-subtle" 
       });
     }
   }
@@ -410,6 +704,8 @@ class JhackLingua extends Plugin {
     this.addCommand({ id: "start-review", name: "Start Leitner review session", callback: () => this.startReview() });
     this.addCommand({ id: "open-dashboard", name: "Open Jhack Lingua dashboard", callback: () => this.openDashboard() });
     this.addCommand({ id: "import-legacy-deck", name: "Import legacy Spaced Repetition deck", callback: () => this.importLegacyDeck() });
+    this.addCommand({ id: "import-excel-csv", name: "Import cards from Excel/CSV file", callback: () => this.importExcelFile() });
+    this.addCommand({ id: "pronunciation-practice", name: "Start pronunciation practice session", callback: () => this.startPronunciationPractice() });
 
     this.addRibbonIcon("book-open-check", "Jhack Lingua: Lookup", () => this.runLookup());
     this.addRibbonIcon("layers", "Jhack Lingua: Review", () => this.startReview());
@@ -586,6 +882,14 @@ class JhackLingua extends Plugin {
       created: Date.now()
     };
     this.settings.cards[card.id] = card;
+    
+    // Track daily progress
+    const today = todayStr();
+    if (!this.settings.dailyProgress[today]) {
+      this.settings.dailyProgress[today] = { added: 0, reviewed: 0 };
+    }
+    this.settings.dailyProgress[today].added++;
+    
     await this.persist();
     this.refreshDashboard();
     return card;
@@ -623,6 +927,14 @@ class JhackLingua extends Plugin {
     card.due = addDays(todayStr(), grade === "again" ? 0 : days);
     card.lastReview = Date.now();
     this.settings.cards[card.id] = card;
+    
+    // Track daily progress for reviews
+    const today = todayStr();
+    if (!this.settings.dailyProgress[today]) {
+      this.settings.dailyProgress[today] = { added: 0, reviewed: 0 };
+    }
+    this.settings.dailyProgress[today].reviewed++;
+    
     this.persist();
     this.refreshDashboard();
   }
@@ -682,6 +994,105 @@ class JhackLingua extends Plugin {
       }
     }
     new Notice(imported ? `Imported ${imported} card(s) into your Leitner deck.` : "No legacy flashcards found.");
+  }
+
+  /* ---------------- Excel/CSV Import ---------------- */
+
+  async importExcelFile() {
+    // Create a hidden file input for Excel/CSV files
+    const input = document.createElement('input');
+    input.type = 'file';
+    input.accept = '.csv,.xlsx,.xls';
+    
+    input.onchange = async (e) => {
+      const file = e.target.files[0];
+      if (!file) return;
+      
+      const fileName = file.name.toLowerCase();
+      let content = '';
+      
+      try {
+        if (fileName.endsWith('.csv')) {
+          content = await file.text();
+          await this.parseAndImportCSV(content);
+        } else if (fileName.endsWith('.xlsx') || fileName.endsWith('.xls')) {
+          // For Excel files, we'll use a simple parser approach
+          // Users need to have the xlsx library or we parse as CSV-like
+          new Notice("For Excel files, please save as CSV first, or install an XLSX parsing library.");
+          // Try to read as text anyway (works for some simple XLSX)
+          try {
+            content = await file.text();
+            await this.parseAndImportCSV(content);
+          } catch (ex) {
+            new Notice("Please convert Excel file to CSV format for best results.");
+          }
+        }
+      } catch (err) {
+        console.error("Import error:", err);
+        new Notice("Error reading file. Please ensure it's a valid CSV or Excel file.");
+      }
+    };
+    
+    input.click();
+  }
+
+  async parseAndImportCSV(content) {
+    const lines = content.split(/\r?\n/).filter(line => line.trim());
+    if (lines.length < 2) {
+      new Notice("File appears to be empty or has no data rows.");
+      return;
+    }
+
+    // Parse header to find column indices
+    const header = lines[0].toLowerCase().split(/[,;\t]/).map(h => h.trim());
+    const wordIdx = header.findIndex(h => h.includes('word'));
+    const meaningIdx = header.findIndex(h => h.includes('meaning') || h.includes('translation') || h.includes('definition'));
+    const exampleIdx = header.findIndex(h => h.includes('example'));
+    const pronunciationIdx = header.findIndex(h => h.includes('pronunciation') || h.includes('phonetic'));
+
+    if (wordIdx === -1) {
+      new Notice("Could not find 'Word' column in header. Please ensure first row contains column names.");
+      return;
+    }
+
+    let imported = 0;
+    let skipped = 0;
+    
+    for (let i = 1; i < lines.length; i++) {
+      const line = lines[i].trim();
+      if (!line) continue;
+      
+      // Simple CSV parsing (doesn't handle quoted fields with commas perfectly)
+      const parts = line.split(/[,;\t]/).map(p => p.trim().replace(/^["']|["']$/g, ''));
+      
+      const word = parts[wordIdx];
+      if (!word) continue;
+      
+      if (this.hasCard(word)) {
+        skipped++;
+        continue;
+      }
+      
+      const data = {
+        translation: meaningIdx !== -1 && parts[meaningIdx] ? parts[meaningIdx] : "",
+        definition: "",
+        example: exampleIdx !== -1 && parts[exampleIdx] ? parts[exampleIdx] : "",
+        pos: "",
+        phonetic: pronunciationIdx !== -1 && parts[pronunciationIdx] ? parts[pronunciationIdx] : "",
+        synonyms: []
+      };
+      
+      await this.addCard(word, data, `Imported from file`);
+      imported++;
+      
+      // Don't overwhelm the UI
+      if (imported % 100 === 0) {
+        await new Promise(resolve => setTimeout(resolve, 10));
+      }
+    }
+    
+    new Notice(`Imported ${imported} card(s)${skipped > 0 ? `, skipped ${skipped} duplicates` : ""}.`);
+    this.refreshDashboard();
   }
 
   /* ---------------- export / import / reset ---------------- */
@@ -850,6 +1261,33 @@ class JhackLingua extends Plugin {
       }
     });
   }
+
+  /* ---------------- Pronunciation Practice Mode ---------------- */
+
+  async startPronunciationPractice() {
+    const due = this.getDueCards();
+    if (!due.length) {
+      new Notice("No cards available for pronunciation practice. Add some words first!");
+      return;
+    }
+
+    // Check if Web Speech Recognition is available
+    const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+    if (!SpeechRecognition) {
+      new Notice("Web Speech Recognition is not supported in your browser. Try Chrome or Edge.");
+      // Fall back to regular review
+      this.startReview();
+      return;
+    }
+
+    const recognition = new SpeechRecognition();
+    recognition.lang = 'en-US';
+    recognition.continuous = false;
+    recognition.interimResults = false;
+
+    const practiceModal = new PronunciationPracticeModal(this.app, this, due, recognition);
+    practiceModal.open();
+  }
 }
 
 /* ---------------------------------------------------------------------- *
@@ -930,6 +1368,9 @@ class JhackSettings extends PluginSettingTab {
 
     new Setting(c).setName("Import legacy Spaced Repetition deck").setDesc("One-time migration: scans your vault's #flashcards notes and copies cards into the new built-in Leitner system.")
       .addButton((b) => b.setButtonText("Import").onClick(() => this.plugin.importLegacyDeck()));
+
+    new Setting(c).setName("Import from Excel/CSV").setDesc("Upload a file with columns: Word, Meaning, Example, Pronunciation. Supports CSV and basic XLSX.")
+      .addButton((b) => b.setButtonText("Upload File").onClick(() => this.plugin.importExcelFile()));
 
     c.createEl("h2", { text: "Appearance" });
     new Setting(c).setName("Accent color")
