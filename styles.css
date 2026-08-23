@@ -71,6 +71,15 @@
 .jhack-chip-clickable { cursor: pointer; }
 .jhack-chip-clickable:hover { background: var(--jhack-accent); color: #fff; }
 
+/* Similar words box at top of modal */
+.jhack-similar-box {
+  margin: 0.6em 0;
+  padding: 0.6em 0.8em;
+  background: var(--background-primary-alt);
+  border-radius: var(--jhack-radius);
+  border-left: 3px solid var(--jhack-accent);
+}
+
 .jhack-badge {
   font-size: 0.68em;
   padding: 0.15em 0.6em;
@@ -189,3 +198,59 @@
 }
 .jhack-status-ok { background: rgba(34, 197, 94, 0.12); color: #16a34a; }
 .jhack-status-bad { background: rgba(239, 68, 68, 0.12); color: #dc2626; }
+
+/* ---------- Audio Player ---------- */
+.jhack-player {
+  padding: 0.8em;
+}
+.jhack-file-input {
+  width: 100%;
+  margin: 0.6em 0;
+  padding: 0.5em;
+  border-radius: var(--jhack-radius);
+  background: var(--background-secondary);
+  border: 1px solid var(--background-modifier-border);
+}
+.jhack-player-box {
+  margin: 0.8em 0;
+  padding: 1em;
+  background: var(--background-secondary);
+  border-radius: var(--jhack-radius);
+  text-align: center;
+}
+.jhack-player-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  flex-wrap: wrap;
+  margin: 0.6em 0;
+}
+.jhack-vol-label {
+  font-size: 0.8em;
+  color: var(--text-muted);
+  margin-right: 0.3em;
+}
+.jhack-player-controls input[type="range"] {
+  flex: 1;
+  min-width: 80px;
+}
+.jhack-player-status {
+  font-size: 0.8em;
+  color: var(--text-muted);
+  margin-top: 0.5em;
+}
+
+/* ---------- Leitner word highlighting ---------- */
+.jhack-leitner-word {
+  background: rgba(229, 9, 20, 0.15);
+  border-bottom: 2px solid var(--jhack-accent);
+  padding: 0 2px;
+  border-radius: 3px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+.jhack-leitner-word:hover {
+  background: var(--jhack-accent);
+  color: #fff;
+}
