@@ -1,0 +1,2676 @@
+{
+  "abandon": {
+    "definition": "To leave a place, thing or person, usually forever.",
+    "example": "They had to abandon the ship.",
+    "phonetic": "əˈbændən",
+    "pos": "verb",
+    "synonyms": [
+      "desert",
+      "forsake",
+      "leave"
+    ],
+    "translation": "رها کردن؛ ترک کردن"
+  },
+  "ability": {
+    "definition": "The physical or mental power to do something.",
+    "example": "She has the ability to solve hard problems.",
+    "phonetic": "əˈbɪləti",
+    "pos": "noun",
+    "synonyms": [
+      "skill",
+      "capability"
+    ],
+    "translation": "توانایی؛ استعداد"
+  },
+  "absorb": {
+    "definition": "To take in or soak up something.",
+    "example": "A sponge can absorb water.",
+    "phonetic": "əbˈzɔːrb",
+    "pos": "verb",
+    "synonyms": [
+      "soak up",
+      "take in"
+    ],
+    "translation": "جذب کردن"
+  },
+  "abstract": {
+    "definition": "Existing as an idea rather than a concrete object.",
+    "example": "Freedom is an abstract concept.",
+    "phonetic": "ˈæbstrækt",
+    "pos": "adjective",
+    "synonyms": [
+      "theoretical",
+      "conceptual"
+    ],
+    "translation": "انتزاعی"
+  },
+  "abundant": {
+    "definition": "Existing in large quantities; plentiful.",
+    "example": "Fresh water is not abundant in that region.",
+    "phonetic": "əˈbʌndənt",
+    "pos": "adjective",
+    "synonyms": [
+      "plentiful",
+      "ample"
+    ],
+    "translation": "فراوان؛ زیاد"
+  },
+  "accomplish": {
+    "definition": "To succeed in doing or completing something.",
+    "example": "We accomplished all our goals this year.",
+    "phonetic": "əˈkɑːmplɪʃ",
+    "pos": "verb",
+    "synonyms": [
+      "achieve",
+      "complete"
+    ],
+    "translation": "انجام دادن؛ به سرانجام رساندن"
+  },
+  "accurate": {
+    "definition": "Correct and exact in all details.",
+    "example": "The report was completely accurate.",
+    "phonetic": "ˈækjərət",
+    "pos": "adjective",
+    "synonyms": [
+      "precise",
+      "exact"
+    ],
+    "translation": "دقیق؛ درست"
+  },
+  "achieve": {
+    "definition": "To successfully complete or reach a goal.",
+    "example": "She achieved her goal of finishing the book.",
+    "phonetic": "əˈtʃiːv",
+    "pos": "verb",
+    "synonyms": [
+      "accomplish",
+      "attain"
+    ],
+    "translation": "به دست آوردن؛ موفق شدن"
+  },
+  "acquire": {
+    "definition": "To gain or come to have something.",
+    "example": "He acquired a new skill last year.",
+    "phonetic": "əˈkwaɪər",
+    "pos": "verb",
+    "synonyms": [
+      "obtain",
+      "gain"
+    ],
+    "translation": "به دست آوردن؛ کسب کردن"
+  },
+  "adapt": {
+    "definition": "To change in order to suit new conditions.",
+    "example": "Animals adapt to their environment.",
+    "phonetic": "əˈdæpt",
+    "pos": "verb",
+    "synonyms": [
+      "adjust",
+      "modify"
+    ],
+    "translation": "سازگار شدن؛ تطبیق دادن"
+  },
+  "adequate": {
+    "definition": "Enough or satisfactory for a purpose.",
+    "example": "The food supply was adequate for the trip.",
+    "phonetic": "ˈædɪkwət",
+    "pos": "adjective",
+    "synonyms": [
+      "sufficient",
+      "enough"
+    ],
+    "translation": "کافی؛ مناسب"
+  },
+  "adjacent": {
+    "definition": "Next to or very near something.",
+    "example": "Her office is adjacent to mine.",
+    "phonetic": "əˈdʒeɪsənt",
+    "pos": "adjective",
+    "synonyms": [
+      "neighboring",
+      "adjoining"
+    ],
+    "translation": "مجاور؛ نزدیک"
+  },
+  "admire": {
+    "definition": "To regard someone or something with respect or approval.",
+    "example": "I really admire her patience.",
+    "phonetic": "ədˈmaɪər",
+    "pos": "verb",
+    "synonyms": [
+      "respect",
+      "appreciate"
+    ],
+    "translation": "تحسین کردن"
+  },
+  "advantage": {
+    "definition": "A condition or circumstance that puts one in a favorable position.",
+    "example": "Speaking two languages is a big advantage.",
+    "phonetic": "ədˈvæntɪdʒ",
+    "pos": "noun",
+    "synonyms": [
+      "benefit",
+      "edge"
+    ],
+    "translation": "مزیت؛ برتری"
+  },
+  "ambiguous": {
+    "definition": "Open to more than one interpretation; not clear.",
+    "example": "His answer was ambiguous.",
+    "phonetic": "æmˈbɪɡjuəs",
+    "pos": "adjective",
+    "synonyms": [
+      "vague",
+      "unclear"
+    ],
+    "translation": "مبهم؛ دوپهلو"
+  },
+  "ancient": {
+    "definition": "Belonging to a very distant past.",
+    "example": "They found an ancient statue.",
+    "phonetic": "ˈeɪnʃənt",
+    "pos": "adjective",
+    "synonyms": [
+      "old",
+      "antique"
+    ],
+    "translation": "باستانی؛ کهن"
+  },
+  "angry": {
+    "definition": "Feeling or showing strong displeasure.",
+    "example": "She was angry about the delay.",
+    "phonetic": "ˈæŋɡri",
+    "pos": "adjective",
+    "synonyms": [
+      "mad",
+      "furious"
+    ],
+    "translation": "عصبانی"
+  },
+  "answer": {
+    "definition": "A response to a question.",
+    "example": "I don't know the answer.",
+    "phonetic": "ˈænsər",
+    "pos": "noun/verb",
+    "synonyms": [
+      "reply",
+      "response"
+    ],
+    "translation": "جواب؛ پاسخ"
+  },
+  "anticipate": {
+    "definition": "To expect or predict something before it happens.",
+    "example": "We anticipate strong demand next quarter.",
+    "phonetic": "ænˈtɪsɪpeɪt",
+    "pos": "verb",
+    "synonyms": [
+      "expect",
+      "foresee"
+    ],
+    "translation": "پیش‌بینی کردن؛ انتظار داشتن"
+  },
+  "anxious": {
+    "definition": "Feeling worried or nervous about something.",
+    "example": "She felt anxious before the exam.",
+    "phonetic": "ˈæŋkʃəs",
+    "pos": "adjective",
+    "synonyms": [
+      "worried",
+      "nervous"
+    ],
+    "translation": "نگران؛ مضطرب"
+  },
+  "apparent": {
+    "definition": "Clearly visible or understood; obvious.",
+    "example": "It was apparent that he was tired.",
+    "phonetic": "əˈpærənt",
+    "pos": "adjective",
+    "synonyms": [
+      "obvious",
+      "evident"
+    ],
+    "translation": "آشکار؛ واضح"
+  },
+  "appreciate": {
+    "definition": "To recognize the value or importance of something.",
+    "example": "I really appreciate your help.",
+    "phonetic": "əˈpriːʃieɪt",
+    "pos": "verb",
+    "synonyms": [
+      "value",
+      "be grateful for"
+    ],
+    "translation": "قدردانی کردن؛ ارزش گذاشتن"
+  },
+  "approach": {
+    "definition": "To come near, or a way of dealing with something.",
+    "example": "We need a new approach to this problem.",
+    "phonetic": "əˈproʊtʃ",
+    "pos": "verb/noun",
+    "synonyms": [
+      "method",
+      "come near"
+    ],
+    "translation": "نزدیک شدن؛ رویکرد"
+  },
+  "appropriate": {
+    "definition": "Suitable or right for a particular situation.",
+    "example": "That outfit isn't appropriate for the interview.",
+    "phonetic": "əˈproʊpriət",
+    "pos": "adjective",
+    "synonyms": [
+      "suitable",
+      "fitting"
+    ],
+    "translation": "مناسب؛ درخور"
+  },
+  "arbitrary": {
+    "definition": "Based on random choice rather than reason or system.",
+    "example": "The decision seemed arbitrary.",
+    "phonetic": "ˈɑːrbɪtreri",
+    "pos": "adjective",
+    "synonyms": [
+      "random",
+      "capricious"
+    ],
+    "translation": "دلبخواهی؛ خودسرانه"
+  },
+  "assume": {
+    "definition": "To accept something as true without proof.",
+    "example": "Let's assume the numbers are correct.",
+    "phonetic": "əˈsuːm",
+    "pos": "verb",
+    "synonyms": [
+      "suppose",
+      "presume"
+    ],
+    "translation": "فرض کردن"
+  },
+  "attempt": {
+    "definition": "To make an effort to do something.",
+    "example": "He made an attempt to fix the car.",
+    "phonetic": "əˈtempt",
+    "pos": "verb/noun",
+    "synonyms": [
+      "try",
+      "endeavor"
+    ],
+    "translation": "تلاش کردن؛ کوشش"
+  },
+  "attribute": {
+    "definition": "A quality belonging to someone or something; or to credit a cause.",
+    "example": "Patience is a valuable attribute.",
+    "phonetic": "ˈætrɪbjuːt",
+    "pos": "noun/verb",
+    "synonyms": [
+      "quality",
+      "trait"
+    ],
+    "translation": "نسبت دادن؛ ویژگی"
+  },
+  "authentic": {
+    "definition": "Genuine and real, not copied or false.",
+    "example": "This is an authentic Persian carpet.",
+    "phonetic": "ɔːˈθentɪk",
+    "pos": "adjective",
+    "synonyms": [
+      "genuine",
+      "real"
+    ],
+    "translation": "اصیل؛ واقعی"
+  },
+  "authority": {
+    "definition": "The power to give orders or make decisions.",
+    "example": "She has the authority to approve the plan.",
+    "phonetic": "əˈθɔːrəti",
+    "pos": "noun",
+    "synonyms": [
+      "power",
+      "control"
+    ],
+    "translation": "اقتدار؛ مرجع"
+  },
+  "available": {
+    "definition": "Able to be used or obtained.",
+    "example": "The tickets are available online.",
+    "phonetic": "əˈveɪləbəl",
+    "pos": "adjective",
+    "synonyms": [
+      "accessible",
+      "obtainable"
+    ],
+    "translation": "در دسترس؛ موجود"
+  },
+  "aware": {
+    "definition": "Having knowledge or perception of a situation.",
+    "example": "She was aware of the risks.",
+    "phonetic": "əˈwer",
+    "pos": "adjective",
+    "synonyms": [
+      "conscious",
+      "informed"
+    ],
+    "translation": "آگاه؛ مطلع"
+  },
+  "bad": {
+    "definition": "Of poor quality; not good.",
+    "example": "The weather is bad today.",
+    "phonetic": "bæd",
+    "pos": "adjective",
+    "synonyms": [
+      "poor",
+      "terrible"
+    ],
+    "translation": "بد"
+  },
+  "beautiful": {
+    "definition": "Pleasing to look at; attractive.",
+    "example": "The sunset was beautiful.",
+    "phonetic": "ˈbjuːtɪfəl",
+    "pos": "adjective",
+    "synonyms": [
+      "pretty",
+      "lovely"
+    ],
+    "translation": "زیبا"
+  },
+  "begin": {
+    "definition": "To start doing or happening.",
+    "example": "The class will begin soon.",
+    "phonetic": "bɪˈɡɪn",
+    "pos": "verb",
+    "synonyms": [
+      "start",
+      "commence"
+    ],
+    "translation": "شروع کردن؛ آغاز کردن"
+  },
+  "benefit": {
+    "definition": "An advantage or profit gained from something.",
+    "example": "Exercise has many health benefits.",
+    "phonetic": "ˈbenɪfɪt",
+    "pos": "noun",
+    "synonyms": [
+      "advantage",
+      "gain"
+    ],
+    "translation": "سود؛ فایده"
+  },
+  "big": {
+    "definition": "Large in size, amount, or extent.",
+    "example": "They live in a big house.",
+    "phonetic": "bɪɡ",
+    "pos": "adjective",
+    "synonyms": [
+      "large",
+      "huge"
+    ],
+    "translation": "بزرگ"
+  },
+  "book": {
+    "definition": "A set of printed or written pages bound together.",
+    "example": "She is reading a new book.",
+    "phonetic": "bʊk",
+    "pos": "noun",
+    "synonyms": [
+      "volume",
+      "text"
+    ],
+    "translation": "کتاب"
+  },
+  "boring": {
+    "definition": "Not interesting; causing tiredness or lack of interest.",
+    "example": "The lecture was boring.",
+    "phonetic": "ˈbɔːrɪŋ",
+    "pos": "adjective",
+    "synonyms": [
+      "dull",
+      "tedious"
+    ],
+    "translation": "خسته‌کننده؛ کسل‌کننده"
+  },
+  "brief": {
+    "definition": "Lasting only a short time; short in length.",
+    "example": "He gave a brief explanation.",
+    "phonetic": "briːf",
+    "pos": "adjective",
+    "synonyms": [
+      "short",
+      "concise"
+    ],
+    "translation": "کوتاه؛ مختصر"
+  },
+  "capable": {
+    "definition": "Having the ability or power to do something.",
+    "example": "She is capable of solving hard problems.",
+    "phonetic": "ˈkeɪpəbəl",
+    "pos": "adjective",
+    "synonyms": [
+      "able",
+      "competent"
+    ],
+    "translation": "توانا؛ قادر"
+  },
+  "careful": {
+    "definition": "Taking care to avoid mistakes or harm.",
+    "example": "Be careful on the wet floor.",
+    "phonetic": "ˈkerfəl",
+    "pos": "adjective",
+    "synonyms": [
+      "cautious",
+      "attentive"
+    ],
+    "translation": "محتاط؛ با دقت"
+  },
+  "cautious": {
+    "definition": "Careful to avoid danger or mistakes.",
+    "example": "He was cautious about spending money.",
+    "phonetic": "ˈkɔːʃəs",
+    "pos": "adjective",
+    "synonyms": [
+      "careful",
+      "wary"
+    ],
+    "translation": "محتاط؛ محافظه‌کار"
+  },
+  "challenge": {
+    "definition": "A task or situation that tests someone's abilities.",
+    "example": "Learning a new language is a big challenge.",
+    "phonetic": "ˈtʃælɪndʒ",
+    "pos": "noun",
+    "synonyms": [
+      "difficulty",
+      "test"
+    ],
+    "translation": "چالش"
+  },
+  "circumstance": {
+    "definition": "A fact or condition connected with an event.",
+    "example": "Under the circumstances, we had no choice.",
+    "phonetic": "ˈsɜːrkəmstæns",
+    "pos": "noun",
+    "synonyms": [
+      "situation",
+      "condition"
+    ],
+    "translation": "شرایط؛ وضعیت"
+  },
+  "clarify": {
+    "definition": "To make something clearer or easier to understand.",
+    "example": "Could you clarify what you mean?",
+    "phonetic": "ˈklærɪfaɪ",
+    "pos": "verb",
+    "synonyms": [
+      "explain",
+      "clear up"
+    ],
+    "translation": "روشن کردن؛ توضیح دادن"
+  },
+  "close": {
+    "definition": "To make something no longer open.",
+    "example": "Close the window, please.",
+    "phonetic": "kloʊz",
+    "pos": "verb/adjective",
+    "synonyms": [
+      "shut",
+      "near"
+    ],
+    "translation": "بستن؛ نزدیک"
+  },
+  "coincide": {
+    "definition": "To happen at the same time, or to be the same.",
+    "example": "Our vacations coincide this year.",
+    "phonetic": "ˌkoʊɪnˈsaɪd",
+    "pos": "verb",
+    "synonyms": [
+      "overlap",
+      "align"
+    ],
+    "translation": "همزمان بودن؛ منطبق بودن"
+  },
+  "cold": {
+    "definition": "Having a low temperature.",
+    "example": "It's cold outside today.",
+    "phonetic": "koʊld",
+    "pos": "adjective",
+    "synonyms": [
+      "chilly",
+      "freezing"
+    ],
+    "translation": "سرد"
+  },
+  "collapse": {
+    "definition": "To fall down or break apart suddenly.",
+    "example": "The old bridge collapsed.",
+    "phonetic": "kəˈlæps",
+    "pos": "verb",
+    "synonyms": [
+      "fall down",
+      "crumble"
+    ],
+    "translation": "فرو ریختن؛ سقوط کردن"
+  },
+  "component": {
+    "definition": "A part of a larger whole or system.",
+    "example": "Each component of the engine was checked.",
+    "phonetic": "kəmˈpoʊnənt",
+    "pos": "noun",
+    "synonyms": [
+      "part",
+      "element"
+    ],
+    "translation": "جزء؛ مولفه"
+  },
+  "comprehensive": {
+    "definition": "Complete and including everything necessary.",
+    "example": "The book gives a comprehensive overview.",
+    "phonetic": "ˌkɑːmprɪˈhensɪv",
+    "pos": "adjective",
+    "synonyms": [
+      "complete",
+      "thorough"
+    ],
+    "translation": "جامع؛ کامل"
+  },
+  "computer": {
+    "definition": "An electronic device that processes data.",
+    "example": "I bought a new computer.",
+    "phonetic": "kəmˈpjuːtər",
+    "pos": "noun",
+    "synonyms": [
+      "PC",
+      "machine"
+    ],
+    "translation": "رایانه؛ کامپیوتر"
+  },
+  "concept": {
+    "definition": "An abstract idea or general notion.",
+    "example": "The concept of gravity is taught in school.",
+    "phonetic": "ˈkɑːnsept",
+    "pos": "noun",
+    "synonyms": [
+      "idea",
+      "notion"
+    ],
+    "translation": "مفهوم؛ ایده"
+  },
+  "concise": {
+    "definition": "Giving information clearly in a few words.",
+    "example": "Please write a concise summary.",
+    "phonetic": "kənˈsaɪs",
+    "pos": "adjective",
+    "synonyms": [
+      "brief",
+      "succinct"
+    ],
+    "translation": "مختصر و مفید"
+  },
+  "consequence": {
+    "definition": "A result or effect of an action.",
+    "example": "Every choice has a consequence.",
+    "phonetic": "ˈkɑːnsɪkwens",
+    "pos": "noun",
+    "synonyms": [
+      "result",
+      "outcome"
+    ],
+    "translation": "پیامد؛ نتیجه"
+  },
+  "considerable": {
+    "definition": "Notably large in amount, extent, or degree.",
+    "example": "They made considerable progress.",
+    "phonetic": "kənˈsɪdərəbəl",
+    "pos": "adjective",
+    "synonyms": [
+      "significant",
+      "substantial"
+    ],
+    "translation": "قابل توجه؛ زیاد"
+  },
+  "consistent": {
+    "definition": "Always behaving or happening in the same way.",
+    "example": "Her work is consistent and reliable.",
+    "phonetic": "kənˈsɪstənt",
+    "pos": "adjective",
+    "synonyms": [
+      "steady",
+      "stable"
+    ],
+    "translation": "ثابت؛ پایدار؛ منسجم"
+  },
+  "constant": {
+    "definition": "Happening continuously or staying the same over time.",
+    "example": "The noise was constant all night.",
+    "phonetic": "ˈkɑːnstənt",
+    "pos": "adjective",
+    "synonyms": [
+      "continuous",
+      "unchanging"
+    ],
+    "translation": "ثابت؛ دائمی"
+  },
+  "contradict": {
+    "definition": "To say the opposite of what someone else has said.",
+    "example": "His actions contradict his words.",
+    "phonetic": "ˌkɑːntrəˈdɪkt",
+    "pos": "verb",
+    "synonyms": [
+      "deny",
+      "conflict with"
+    ],
+    "translation": "تناقض داشتن؛ رد کردن"
+  },
+  "contribute": {
+    "definition": "To give something in order to help achieve a result.",
+    "example": "Everyone contributed ideas to the project.",
+    "phonetic": "kənˈtrɪbjuːt",
+    "pos": "verb",
+    "synonyms": [
+      "give",
+      "help"
+    ],
+    "translation": "مشارکت کردن؛ کمک کردن"
+  },
+  "convenient": {
+    "definition": "Fitting in well with a person's needs; easy to use.",
+    "example": "The store is convenient for us.",
+    "phonetic": "kənˈviːniənt",
+    "pos": "adjective",
+    "synonyms": [
+      "handy",
+      "suitable"
+    ],
+    "translation": "راحت؛ مناسب"
+  },
+  "criteria": {
+    "definition": "Standards used to judge or decide something (plural of criterion).",
+    "example": "The criteria for the award are strict.",
+    "phonetic": "kraɪˈtɪriə",
+    "pos": "noun",
+    "synonyms": [
+      "standards",
+      "measures"
+    ],
+    "translation": "معیارها"
+  },
+  "crucial": {
+    "definition": "Extremely important or necessary.",
+    "example": "Sleep is crucial for good health.",
+    "phonetic": "ˈkruːʃəl",
+    "pos": "adjective",
+    "synonyms": [
+      "vital",
+      "essential"
+    ],
+    "translation": "حیاتی؛ بسیار مهم"
+  },
+  "curious": {
+    "definition": "Eager to know or learn something.",
+    "example": "The child was curious about everything.",
+    "phonetic": "ˈkjʊriəs",
+    "pos": "adjective",
+    "synonyms": [
+      "inquisitive",
+      "interested"
+    ],
+    "translation": "کنجکاو"
+  },
+  "dark": {
+    "definition": "Having very little or no light; not bright.",
+    "example": "It was dark outside.",
+    "phonetic": "dɑːrk",
+    "pos": "adjective",
+    "synonyms": [
+      "dim",
+      "gloomy",
+      "black"
+    ],
+    "translation": "تاریک؛ تیره"
+  },
+  "deliberate": {
+    "definition": "Done on purpose; intentional.",
+    "example": "It was a deliberate mistake.",
+    "phonetic": "dɪˈlɪbərət",
+    "pos": "adjective",
+    "synonyms": [
+      "intentional",
+      "planned"
+    ],
+    "translation": "عمدی؛ آگاهانه"
+  },
+  "demonstrate": {
+    "definition": "To clearly show that something exists or is true.",
+    "example": "The results demonstrate real progress.",
+    "phonetic": "ˈdemənstreɪt",
+    "pos": "verb",
+    "synonyms": [
+      "show",
+      "prove"
+    ],
+    "translation": "نشان دادن؛ اثبات کردن"
+  },
+  "deny": {
+    "definition": "To say that something is not true.",
+    "example": "She denied breaking the vase.",
+    "phonetic": "dɪˈnaɪ",
+    "pos": "verb",
+    "synonyms": [
+      "refute",
+      "reject"
+    ],
+    "translation": "انکار کردن"
+  },
+  "depend": {
+    "definition": "To rely on someone or something, or to be determined by.",
+    "example": "It depends on the weather.",
+    "phonetic": "dɪˈpend",
+    "pos": "verb",
+    "synonyms": [
+      "rely",
+      "hinge"
+    ],
+    "translation": "وابسته بودن؛ بستگی داشتن"
+  },
+  "derive": {
+    "definition": "To obtain something from a source; to originate.",
+    "example": "The word derives from Latin.",
+    "phonetic": "dɪˈraɪv",
+    "pos": "verb",
+    "synonyms": [
+      "originate",
+      "stem"
+    ],
+    "translation": "مشتق شدن؛ ناشی شدن"
+  },
+  "deserve": {
+    "definition": "To have earned or to be worthy of something.",
+    "example": "You deserve a break after all that work.",
+    "phonetic": "dɪˈzɜːrv",
+    "pos": "verb",
+    "synonyms": [
+      "merit",
+      "warrant"
+    ],
+    "translation": "شایسته بودن؛ استحقاق داشتن"
+  },
+  "despite": {
+    "definition": "Without being affected by; regardless of.",
+    "example": "Despite the rain, they went out.",
+    "phonetic": "dɪˈspaɪt",
+    "pos": "preposition",
+    "synonyms": [
+      "notwithstanding",
+      "in spite of"
+    ],
+    "translation": "با وجود؛ علی‌رغم"
+  },
+  "determine": {
+    "definition": "To officially decide something, or to find out exactly.",
+    "example": "Tests will determine the cause.",
+    "phonetic": "dɪˈtɜːrmɪn",
+    "pos": "verb",
+    "synonyms": [
+      "decide",
+      "establish"
+    ],
+    "translation": "تعیین کردن؛ مشخص کردن"
+  },
+  "difficult": {
+    "definition": "Needing much effort or skill to do or understand.",
+    "example": "That was a difficult exam.",
+    "phonetic": "ˈdɪfɪkəlt",
+    "pos": "adjective",
+    "synonyms": [
+      "hard",
+      "tough"
+    ],
+    "translation": "سخت؛ دشوار"
+  },
+  "diminish": {
+    "definition": "To become or make something smaller or less.",
+    "example": "His enthusiasm began to diminish.",
+    "phonetic": "dɪˈmɪnɪʃ",
+    "pos": "verb",
+    "synonyms": [
+      "decrease",
+      "reduce"
+    ],
+    "translation": "کاهش یافتن؛ کم شدن"
+  },
+  "distinct": {
+    "definition": "Clearly different or separate from something else.",
+    "example": "The two ideas are quite distinct.",
+    "phonetic": "dɪˈstɪŋkt",
+    "pos": "adjective",
+    "synonyms": [
+      "different",
+      "separate"
+    ],
+    "translation": "متمایز؛ مشخص"
+  },
+  "easy": {
+    "definition": "Not difficult; simple to do or understand.",
+    "example": "This exercise is easy.",
+    "phonetic": "ˈiːzi",
+    "pos": "adjective",
+    "synonyms": [
+      "simple",
+      "effortless"
+    ],
+    "translation": "آسان؛ ساده"
+  },
+  "efficient": {
+    "definition": "Working well without wasting time or resources.",
+    "example": "The new system is much more efficient.",
+    "phonetic": "ɪˈfɪʃənt",
+    "pos": "adjective",
+    "synonyms": [
+      "effective",
+      "productive"
+    ],
+    "translation": "کارآمد؛ بهره‌ور"
+  },
+  "emerge": {
+    "definition": "To come out or become visible or known.",
+    "example": "New evidence began to emerge.",
+    "phonetic": "ɪˈmɜːrdʒ",
+    "pos": "verb",
+    "synonyms": [
+      "appear",
+      "surface"
+    ],
+    "translation": "پدیدار شدن؛ بیرون آمدن"
+  },
+  "emphasize": {
+    "definition": "To give special importance to something.",
+    "example": "She emphasized the need for teamwork.",
+    "phonetic": "ˈemfəsaɪz",
+    "pos": "verb",
+    "synonyms": [
+      "stress",
+      "highlight"
+    ],
+    "translation": "تاکید کردن"
+  },
+  "end": {
+    "definition": "The final part of something.",
+    "example": "We reached the end of the road.",
+    "phonetic": "end",
+    "pos": "noun/verb",
+    "synonyms": [
+      "finish",
+      "conclusion"
+    ],
+    "translation": "پایان؛ تمام شدن"
+  },
+  "enhance": {
+    "definition": "To improve the quality or value of something.",
+    "example": "Good lighting can enhance a photo.",
+    "phonetic": "ɪnˈhæns",
+    "pos": "verb",
+    "synonyms": [
+      "improve",
+      "boost"
+    ],
+    "translation": "بهبود بخشیدن؛ ارتقا دادن"
+  },
+  "ensure": {
+    "definition": "To make certain that something happens.",
+    "example": "Please ensure the door is locked.",
+    "phonetic": "ɪnˈʃʊr",
+    "pos": "verb",
+    "synonyms": [
+      "guarantee",
+      "make sure"
+    ],
+    "translation": "اطمینان حاصل کردن؛ تضمین کردن"
+  },
+  "essential": {
+    "definition": "Absolutely necessary or extremely important.",
+    "example": "Water is essential for life.",
+    "phonetic": "ɪˈsenʃəl",
+    "pos": "adjective",
+    "synonyms": [
+      "vital",
+      "necessary"
+    ],
+    "translation": "ضروری؛ اساسی"
+  },
+  "eventually": {
+    "definition": "In the end, especially after a long time or delay.",
+    "example": "She eventually found the right job.",
+    "phonetic": "ɪˈventʃuəli",
+    "pos": "adverb",
+    "synonyms": [
+      "finally",
+      "ultimately"
+    ],
+    "translation": "سرانجام؛ در نهایت"
+  },
+  "evident": {
+    "definition": "Clearly seen or understood; obvious.",
+    "example": "Her talent was evident from a young age.",
+    "phonetic": "ˈevɪdənt",
+    "pos": "adjective",
+    "synonyms": [
+      "obvious",
+      "clear"
+    ],
+    "translation": "واضح؛ آشکار"
+  },
+  "exceed": {
+    "definition": "To go beyond a limit or expectation.",
+    "example": "Sales exceeded expectations.",
+    "phonetic": "ɪkˈsiːd",
+    "pos": "verb",
+    "synonyms": [
+      "surpass",
+      "go beyond"
+    ],
+    "translation": "فراتر رفتن؛ تجاوز کردن"
+  },
+  "exclude": {
+    "definition": "To leave out or not include something.",
+    "example": "The price excludes tax.",
+    "phonetic": "ɪkˈskluːd",
+    "pos": "verb",
+    "synonyms": [
+      "omit",
+      "leave out"
+    ],
+    "translation": "مستثنی کردن؛ حذف کردن"
+  },
+  "expand": {
+    "definition": "To increase in size, number, or extent.",
+    "example": "The company plans to expand overseas.",
+    "phonetic": "ɪkˈspænd",
+    "pos": "verb",
+    "synonyms": [
+      "grow",
+      "enlarge"
+    ],
+    "translation": "گسترش دادن؛ بزرگ شدن"
+  },
+  "expose": {
+    "definition": "To reveal or make something known or visible.",
+    "example": "The report exposed the truth.",
+    "phonetic": "ɪkˈspoʊz",
+    "pos": "verb",
+    "synonyms": [
+      "reveal",
+      "uncover"
+    ],
+    "translation": "در معرض قرار دادن؛ افشا کردن"
+  },
+  "extend": {
+    "definition": "To make something longer or larger; to offer.",
+    "example": "They extended the deadline.",
+    "phonetic": "ɪkˈstend",
+    "pos": "verb",
+    "synonyms": [
+      "prolong",
+      "stretch"
+    ],
+    "translation": "گسترش دادن؛ طولانی کردن"
+  },
+  "factor": {
+    "definition": "A circumstance or influence that contributes to a result.",
+    "example": "Price is an important factor.",
+    "phonetic": "ˈfæktər",
+    "pos": "noun",
+    "synonyms": [
+      "element",
+      "aspect"
+    ],
+    "translation": "عامل؛ فاکتور"
+  },
+  "false": {
+    "definition": "Not true or accurate; incorrect.",
+    "example": "That statement is false.",
+    "phonetic": "fɔːls",
+    "pos": "adjective",
+    "synonyms": [
+      "untrue",
+      "incorrect"
+    ],
+    "translation": "نادرست؛ غلط"
+  },
+  "family": {
+    "definition": "A group of people related by blood or marriage.",
+    "example": "My family lives in Tehran.",
+    "phonetic": "ˈfæmɪli",
+    "pos": "noun",
+    "synonyms": [
+      "household",
+      "relatives"
+    ],
+    "translation": "خانواده"
+  },
+  "fast": {
+    "definition": "Moving or happening quickly.",
+    "example": "He runs very fast.",
+    "phonetic": "fæst",
+    "pos": "adjective/adverb",
+    "synonyms": [
+      "quick",
+      "rapid"
+    ],
+    "translation": "سریع؛ تند"
+  },
+  "feasible": {
+    "definition": "Possible to do easily or conveniently.",
+    "example": "Is this plan feasible?",
+    "phonetic": "ˈfiːzəbəl",
+    "pos": "adjective",
+    "synonyms": [
+      "possible",
+      "practicable"
+    ],
+    "translation": "عملی؛ شدنی"
+  },
+  "finish": {
+    "definition": "To complete or bring to an end.",
+    "example": "I need to finish my homework.",
+    "phonetic": "ˈfɪnɪʃ",
+    "pos": "verb",
+    "synonyms": [
+      "complete",
+      "end"
+    ],
+    "translation": "تمام کردن؛ به پایان رساندن"
+  },
+  "flexible": {
+    "definition": "Able to change or adapt to new conditions.",
+    "example": "We need a flexible schedule.",
+    "phonetic": "ˈfleksəbəl",
+    "pos": "adjective",
+    "synonyms": [
+      "adaptable",
+      "versatile"
+    ],
+    "translation": "انعطاف‌پذیر"
+  },
+  "forget": {
+    "definition": "To fail to remember something.",
+    "example": "Don't forget your keys.",
+    "phonetic": "fərˈɡet",
+    "pos": "verb",
+    "synonyms": [
+      "overlook",
+      "neglect"
+    ],
+    "translation": "فراموش کردن"
+  },
+  "friend": {
+    "definition": "A person you know well and like.",
+    "example": "She is my best friend.",
+    "phonetic": "frend",
+    "pos": "noun",
+    "synonyms": [
+      "companion",
+      "pal"
+    ],
+    "translation": "دوست"
+  },
+  "fundamental": {
+    "definition": "Forming the base or core of something; essential.",
+    "example": "Trust is fundamental to any relationship.",
+    "phonetic": "ˌfʌndəˈmentl",
+    "pos": "adjective",
+    "synonyms": [
+      "basic",
+      "essential"
+    ],
+    "translation": "بنیادین؛ اساسی"
+  },
+  "genuine": {
+    "definition": "Truly what it is said to be; sincere.",
+    "example": "He showed genuine concern.",
+    "phonetic": "ˈdʒenjuɪn",
+    "pos": "adjective",
+    "synonyms": [
+      "real",
+      "authentic"
+    ],
+    "translation": "واقعی؛ اصیل"
+  },
+  "good": {
+    "definition": "Having positive qualities; of high quality.",
+    "example": "That was a good movie.",
+    "phonetic": "ɡʊd",
+    "pos": "adjective",
+    "synonyms": [
+      "fine",
+      "excellent"
+    ],
+    "translation": "خوب"
+  },
+  "gradual": {
+    "definition": "Happening slowly over a long period of time.",
+    "example": "There was a gradual improvement in his health.",
+    "phonetic": "ˈɡrædʒuəl",
+    "pos": "adjective",
+    "synonyms": [
+      "slow",
+      "steady"
+    ],
+    "translation": "تدریجی"
+  },
+  "grateful": {
+    "definition": "Feeling or showing thanks for something.",
+    "example": "I'm grateful for your help.",
+    "phonetic": "ˈɡreɪtfəl",
+    "pos": "adjective",
+    "synonyms": [
+      "thankful",
+      "appreciative"
+    ],
+    "translation": "سپاسگزار؛ ممنون"
+  },
+  "guarantee": {
+    "definition": "A firm promise that something will happen or be true.",
+    "example": "The product comes with a guarantee.",
+    "phonetic": "ˌɡærənˈtiː",
+    "pos": "noun/verb",
+    "synonyms": [
+      "assurance",
+      "promise"
+    ],
+    "translation": "تضمین کردن؛ ضمانت"
+  },
+  "habit": {
+    "definition": "A regular practice, especially one that is hard to give up.",
+    "example": "Reading before bed is a good habit.",
+    "phonetic": "ˈhæbɪt",
+    "pos": "noun",
+    "synonyms": [
+      "routine",
+      "custom"
+    ],
+    "translation": "عادت"
+  },
+  "happy": {
+    "definition": "Feeling or showing pleasure or contentment.",
+    "example": "She looks very happy today.",
+    "phonetic": "ˈhæpi",
+    "pos": "adjective",
+    "synonyms": [
+      "glad",
+      "joyful"
+    ],
+    "translation": "خوشحال؛ شاد"
+  },
+  "hate": {
+    "definition": "To dislike someone or something intensely.",
+    "example": "He hates waiting in line.",
+    "phonetic": "heɪt",
+    "pos": "verb/noun",
+    "synonyms": [
+      "detest",
+      "despise"
+    ],
+    "translation": "متنفر بودن؛ نفرت"
+  },
+  "help": {
+    "definition": "To make it easier for someone to do something.",
+    "example": "Can you help me with this?",
+    "phonetic": "help",
+    "pos": "verb/noun",
+    "synonyms": [
+      "assist",
+      "aid"
+    ],
+    "translation": "کمک کردن؛ کمک"
+  },
+  "hesitate": {
+    "definition": "To pause before doing something, often due to uncertainty.",
+    "example": "She hesitated before answering.",
+    "phonetic": "ˈhezɪteɪt",
+    "pos": "verb",
+    "synonyms": [
+      "pause",
+      "waver"
+    ],
+    "translation": "تردید کردن؛ درنگ کردن"
+  },
+  "hollow": {
+    "definition": "Having a hole or empty space inside; not solid.",
+    "example": "The tree was hollow inside.",
+    "phonetic": "ˈhɑːloʊ",
+    "pos": "adjective",
+    "synonyms": [
+      "empty",
+      "cavity"
+    ],
+    "translation": "توخالی؛ گود؛ پوچ"
+  },
+  "hot": {
+    "definition": "Having a high temperature.",
+    "example": "The soup is too hot.",
+    "phonetic": "hɑːt",
+    "pos": "adjective",
+    "synonyms": [
+      "warm",
+      "boiling"
+    ],
+    "translation": "داغ؛ گرم"
+  },
+  "identical": {
+    "definition": "Exactly the same in every way.",
+    "example": "The twins wore identical outfits.",
+    "phonetic": "aɪˈdentɪkəl",
+    "pos": "adjective",
+    "synonyms": [
+      "same",
+      "matching"
+    ],
+    "translation": "یکسان؛ عین هم"
+  },
+  "immediate": {
+    "definition": "Happening or done at once, without delay.",
+    "example": "We need an immediate response.",
+    "phonetic": "ɪˈmiːdiət",
+    "pos": "adjective",
+    "synonyms": [
+      "instant",
+      "prompt"
+    ],
+    "translation": "فوری؛ بی‌درنگ"
+  },
+  "immense": {
+    "definition": "Extremely large or great in size or degree.",
+    "example": "The desert covers an immense area.",
+    "phonetic": "ɪˈmens",
+    "pos": "adjective",
+    "synonyms": [
+      "huge",
+      "enormous"
+    ],
+    "translation": "عظیم؛ بسیار بزرگ"
+  },
+  "imply": {
+    "definition": "To suggest something without saying it directly.",
+    "example": "Her tone implied disapproval.",
+    "phonetic": "ɪmˈplaɪ",
+    "pos": "verb",
+    "synonyms": [
+      "suggest",
+      "hint"
+    ],
+    "translation": "دلالت داشتن؛ ضمنا بیان کردن"
+  },
+  "important": {
+    "definition": "Having great value, meaning, or significance.",
+    "example": "Health is important.",
+    "phonetic": "ɪmˈpɔːrtnt",
+    "pos": "adjective",
+    "synonyms": [
+      "significant",
+      "vital"
+    ],
+    "translation": "مهم"
+  },
+  "inevitable": {
+    "definition": "Certain to happen; unavoidable.",
+    "example": "Change is inevitable.",
+    "phonetic": "ɪnˈevɪtəbəl",
+    "pos": "adjective",
+    "synonyms": [
+      "unavoidable",
+      "certain"
+    ],
+    "translation": "اجتناب‌ناپذیر"
+  },
+  "initial": {
+    "definition": "Occurring at the beginning; first.",
+    "example": "The initial results look promising.",
+    "phonetic": "ɪˈnɪʃəl",
+    "pos": "adjective",
+    "synonyms": [
+      "first",
+      "original"
+    ],
+    "translation": "اولیه؛ نخستین"
+  },
+  "innovative": {
+    "definition": "Introducing new ideas or methods.",
+    "example": "The startup has an innovative product.",
+    "phonetic": "ˈɪnəveɪtɪv",
+    "pos": "adjective",
+    "synonyms": [
+      "inventive",
+      "original"
+    ],
+    "translation": "نوآورانه"
+  },
+  "insight": {
+    "definition": "A clear and deep understanding of something.",
+    "example": "The book offers insight into human behavior.",
+    "phonetic": "ˈɪnsaɪt",
+    "pos": "noun",
+    "synonyms": [
+      "understanding",
+      "perception"
+    ],
+    "translation": "بینش؛ درک عمیق"
+  },
+  "instance": {
+    "definition": "An example or single occurrence of something.",
+    "example": "For instance, consider this case.",
+    "phonetic": "ˈɪnstəns",
+    "pos": "noun",
+    "synonyms": [
+      "example",
+      "case"
+    ],
+    "translation": "نمونه؛ مورد"
+  },
+  "integrate": {
+    "definition": "To combine parts into a whole.",
+    "example": "We need to integrate the new system.",
+    "phonetic": "ˈɪntɪɡreɪt",
+    "pos": "verb",
+    "synonyms": [
+      "combine",
+      "merge"
+    ],
+    "translation": "یکپارچه کردن؛ ادغام کردن"
+  },
+  "interesting": {
+    "definition": "Attracting attention or curiosity.",
+    "example": "This is an interesting book.",
+    "phonetic": "ˈɪntrəstɪŋ",
+    "pos": "adjective",
+    "synonyms": [
+      "fascinating",
+      "engaging"
+    ],
+    "translation": "جالب؛ جذاب"
+  },
+  "internet": {
+    "definition": "A global network connecting computers.",
+    "example": "We need the internet to download files.",
+    "phonetic": "ˈɪntərnet",
+    "pos": "noun",
+    "synonyms": [
+      "web",
+      "network"
+    ],
+    "translation": "اینترنت"
+  },
+  "interpret": {
+    "definition": "To explain the meaning of something.",
+    "example": "How do you interpret this data?",
+    "phonetic": "ɪnˈtɜːrprɪt",
+    "pos": "verb",
+    "synonyms": [
+      "explain",
+      "understand"
+    ],
+    "translation": "تفسیر کردن؛ تعبیر کردن"
+  },
+  "justify": {
+    "definition": "To show or prove that something is right or reasonable.",
+    "example": "Can you justify this decision?",
+    "phonetic": "ˈdʒʌstɪfaɪ",
+    "pos": "verb",
+    "synonyms": [
+      "defend",
+      "validate"
+    ],
+    "translation": "توجیه کردن"
+  },
+  "language": {
+    "definition": "A system of communication used by people, made of words and grammar.",
+    "example": "Persian is a beautiful language.",
+    "phonetic": "ˈlæŋɡwɪdʒ",
+    "pos": "noun",
+    "synonyms": [
+      "tongue",
+      "speech"
+    ],
+    "translation": "زبان"
+  },
+  "learn": {
+    "definition": "To gain knowledge or skill through study or experience.",
+    "example": "He wants to learn Python.",
+    "phonetic": "lɜːrn",
+    "pos": "verb",
+    "synonyms": [
+      "study",
+      "master"
+    ],
+    "translation": "یاد گرفتن"
+  },
+  "legitimate": {
+    "definition": "Conforming to the law or to accepted standards.",
+    "example": "He has a legitimate reason to be absent.",
+    "phonetic": "lɪˈdʒɪtɪmət",
+    "pos": "adjective",
+    "synonyms": [
+      "legal",
+      "valid"
+    ],
+    "translation": "قانونی؛ مشروع"
+  },
+  "like": {
+    "definition": "To enjoy or approve of something; similar to.",
+    "example": "I like reading books.",
+    "phonetic": "laɪk",
+    "pos": "verb/preposition",
+    "synonyms": [
+      "enjoy",
+      "similar to"
+    ],
+    "translation": "دوست داشتن؛ مانند"
+  },
+  "likely": {
+    "definition": "Probable; expected to happen.",
+    "example": "It's likely to rain today.",
+    "phonetic": "ˈlaɪkli",
+    "pos": "adjective/adverb",
+    "synonyms": [
+      "probable",
+      "expected"
+    ],
+    "translation": "محتمل؛ احتمالا"
+  },
+  "listen": {
+    "definition": "To pay attention to sound or speech.",
+    "example": "Listen carefully to the instructions.",
+    "phonetic": "ˈlɪsən",
+    "pos": "verb",
+    "synonyms": [
+      "hear",
+      "pay attention"
+    ],
+    "translation": "گوش دادن"
+  },
+  "love": {
+    "definition": "A deep feeling of affection; to feel this.",
+    "example": "She loves her family very much.",
+    "phonetic": "lʌv",
+    "pos": "noun/verb",
+    "synonyms": [
+      "adore",
+      "cherish"
+    ],
+    "translation": "عشق؛ دوست داشتن"
+  },
+  "maintain": {
+    "definition": "To keep something in good condition or continue it.",
+    "example": "It's hard to maintain a healthy diet.",
+    "phonetic": "meɪnˈteɪn",
+    "pos": "verb",
+    "synonyms": [
+      "keep up",
+      "preserve"
+    ],
+    "translation": "حفظ کردن؛ نگهداری کردن"
+  },
+  "manipulate": {
+    "definition": "To control or handle skillfully, sometimes unfairly.",
+    "example": "He tried to manipulate the results.",
+    "phonetic": "məˈnɪpjuleɪt",
+    "pos": "verb",
+    "synonyms": [
+      "handle",
+      "control"
+    ],
+    "translation": "دستکاری کردن"
+  },
+  "minimize": {
+    "definition": "To reduce something to the smallest possible amount.",
+    "example": "We should minimize waste.",
+    "phonetic": "ˈmɪnɪmaɪz",
+    "pos": "verb",
+    "synonyms": [
+      "reduce",
+      "lessen"
+    ],
+    "translation": "کمینه کردن؛ به حداقل رساندن"
+  },
+  "minor": {
+    "definition": "Small in size, importance, or seriousness.",
+    "example": "It's just a minor issue.",
+    "phonetic": "ˈmaɪnər",
+    "pos": "adjective",
+    "synonyms": [
+      "small",
+      "slight"
+    ],
+    "translation": "جزئی؛ کوچک"
+  },
+  "modify": {
+    "definition": "To make partial changes to something.",
+    "example": "He modified the code to fix the bug.",
+    "phonetic": "ˈmɑːdɪfaɪ",
+    "pos": "verb",
+    "synonyms": [
+      "change",
+      "alter"
+    ],
+    "translation": "تغییر دادن؛ اصلاح کردن"
+  },
+  "money": {
+    "definition": "Currency used to buy and sell things.",
+    "example": "She saved a lot of money.",
+    "phonetic": "ˈmʌni",
+    "pos": "noun",
+    "synonyms": [
+      "cash",
+      "currency"
+    ],
+    "translation": "پول"
+  },
+  "need": {
+    "definition": "To require something because it is essential.",
+    "example": "I need more time.",
+    "phonetic": "niːd",
+    "pos": "verb/noun",
+    "synonyms": [
+      "require",
+      "necessity"
+    ],
+    "translation": "نیاز داشتن؛ نیاز"
+  },
+  "neglect": {
+    "definition": "To fail to take care of or give attention to something.",
+    "example": "Don't neglect your health.",
+    "phonetic": "nɪˈɡlekt",
+    "pos": "verb",
+    "synonyms": [
+      "ignore",
+      "overlook"
+    ],
+    "translation": "غفلت کردن؛ نادیده گرفتن"
+  },
+  "negotiate": {
+    "definition": "To discuss something in order to reach an agreement.",
+    "example": "They negotiated a better price.",
+    "phonetic": "nɪˈɡoʊʃieɪt",
+    "pos": "verb",
+    "synonyms": [
+      "bargain",
+      "discuss"
+    ],
+    "translation": "مذاکره کردن"
+  },
+  "neutral": {
+    "definition": "Not supporting either side in a conflict or disagreement.",
+    "example": "Switzerland remained neutral during the war.",
+    "phonetic": "ˈnuːtrəl",
+    "pos": "adjective",
+    "synonyms": [
+      "impartial",
+      "unbiased"
+    ],
+    "translation": "بی‌طرف؛ خنثی"
+  },
+  "new": {
+    "definition": "Recently made, introduced, or discovered.",
+    "example": "I bought a new phone.",
+    "phonetic": "nuː",
+    "pos": "adjective",
+    "synonyms": [
+      "recent",
+      "modern"
+    ],
+    "translation": "جدید؛ نو"
+  },
+  "notion": {
+    "definition": "A belief, idea, or general understanding.",
+    "example": "He had a vague notion of what to do.",
+    "phonetic": "ˈnoʊʃən",
+    "pos": "noun",
+    "synonyms": [
+      "idea",
+      "concept"
+    ],
+    "translation": "تصور؛ مفهوم"
+  },
+  "obtain": {
+    "definition": "To get or acquire something.",
+    "example": "You need a permit to obtain this license.",
+    "phonetic": "əbˈteɪn",
+    "pos": "verb",
+    "synonyms": [
+      "acquire",
+      "get"
+    ],
+    "translation": "به دست آوردن"
+  },
+  "obvious": {
+    "definition": "Easy to see or understand; clear.",
+    "example": "It's obvious that she's tired.",
+    "phonetic": "ˈɑːbviəs",
+    "pos": "adjective",
+    "synonyms": [
+      "clear",
+      "evident"
+    ],
+    "translation": "واضح؛ بدیهی"
+  },
+  "occur": {
+    "definition": "To happen or take place.",
+    "example": "The accident occurred at night.",
+    "phonetic": "əˈkɜːr",
+    "pos": "verb",
+    "synonyms": [
+      "happen",
+      "take place"
+    ],
+    "translation": "رخ دادن؛ اتفاق افتادن"
+  },
+  "old": {
+    "definition": "Having existed for a long time; not young.",
+    "example": "This is an old house.",
+    "phonetic": "oʊld",
+    "pos": "adjective",
+    "synonyms": [
+      "aged",
+      "ancient"
+    ],
+    "translation": "قدیمی؛ پیر"
+  },
+  "open": {
+    "definition": "To make something no longer closed.",
+    "example": "Please open the door.",
+    "phonetic": "ˈoʊpən",
+    "pos": "verb/adjective",
+    "synonyms": [
+      "unlock",
+      "unclose"
+    ],
+    "translation": "باز کردن؛ باز"
+  },
+  "outcome": {
+    "definition": "The final result of an action or process.",
+    "example": "We are waiting for the outcome of the vote.",
+    "phonetic": "ˈaʊtkʌm",
+    "pos": "noun",
+    "synonyms": [
+      "result",
+      "consequence"
+    ],
+    "translation": "نتیجه؛ پیامد"
+  },
+  "outline": {
+    "definition": "A general description or plan showing the main features.",
+    "example": "She wrote an outline for the essay.",
+    "phonetic": "ˈaʊtlaɪn",
+    "pos": "noun/verb",
+    "synonyms": [
+      "summary",
+      "framework"
+    ],
+    "translation": "طرح کلی؛ خلاصه"
+  },
+  "overcome": {
+    "definition": "To successfully deal with a problem or difficulty.",
+    "example": "She overcame her fear of public speaking.",
+    "phonetic": "ˌoʊvərˈkʌm",
+    "pos": "verb",
+    "synonyms": [
+      "conquer",
+      "defeat"
+    ],
+    "translation": "غلبه کردن؛ چیره شدن"
+  },
+  "perceive": {
+    "definition": "To become aware of something through the senses or mind.",
+    "example": "She perceived a change in his mood.",
+    "phonetic": "pərˈsiːv",
+    "pos": "verb",
+    "synonyms": [
+      "notice",
+      "sense"
+    ],
+    "translation": "درک کردن؛ دریافتن"
+  },
+  "persist": {
+    "definition": "To continue firmly despite difficulty or opposition.",
+    "example": "He persisted until he solved the problem.",
+    "phonetic": "pərˈsɪst",
+    "pos": "verb",
+    "synonyms": [
+      "continue",
+      "persevere"
+    ],
+    "translation": "پافشاری کردن؛ ادامه دادن"
+  },
+  "phenomenon": {
+    "definition": "A fact or event, especially one that is unusual.",
+    "example": "Lightning is a natural phenomenon.",
+    "phonetic": "fəˈnɑːmɪnən",
+    "pos": "noun",
+    "synonyms": [
+      "occurrence",
+      "event"
+    ],
+    "translation": "پدیده"
+  },
+  "phone": {
+    "definition": "A device used to talk to someone remotely.",
+    "example": "My phone is out of battery.",
+    "phonetic": "foʊn",
+    "pos": "noun",
+    "synonyms": [
+      "telephone",
+      "mobile"
+    ],
+    "translation": "تلفن"
+  },
+  "plausible": {
+    "definition": "Seeming reasonable or probable.",
+    "example": "That's a plausible explanation.",
+    "phonetic": "ˈplɔːzəbəl",
+    "pos": "adjective",
+    "synonyms": [
+      "credible",
+      "believable"
+    ],
+    "translation": "قابل قبول؛ محتمل"
+  },
+  "portion": {
+    "definition": "A part of a whole; a share.",
+    "example": "She ate a small portion of the cake.",
+    "phonetic": "ˈpɔːrʃən",
+    "pos": "noun",
+    "synonyms": [
+      "part",
+      "share"
+    ],
+    "translation": "بخش؛ سهم"
+  },
+  "potential": {
+    "definition": "Capable of becoming or developing into something in the future.",
+    "example": "She has great potential as a leader.",
+    "phonetic": "pəˈtenʃəl",
+    "pos": "adjective/noun",
+    "synonyms": [
+      "possible",
+      "capability"
+    ],
+    "translation": "بالقوه؛ توان بالقوه"
+  },
+  "practice": {
+    "definition": "To repeat an activity to improve a skill.",
+    "example": "Practice makes perfect.",
+    "phonetic": "ˈpræktɪs",
+    "pos": "verb/noun",
+    "synonyms": [
+      "rehearse",
+      "train"
+    ],
+    "translation": "تمرین کردن؛ تمرین"
+  },
+  "precise": {
+    "definition": "Exact and accurate.",
+    "example": "He gave precise instructions.",
+    "phonetic": "prɪˈsaɪs",
+    "pos": "adjective",
+    "synonyms": [
+      "exact",
+      "accurate"
+    ],
+    "translation": "دقیق؛ مشخص"
+  },
+  "predict": {
+    "definition": "To say what will happen in the future.",
+    "example": "It's hard to predict the weather.",
+    "phonetic": "prɪˈdɪkt",
+    "pos": "verb",
+    "synonyms": [
+      "forecast",
+      "foresee"
+    ],
+    "translation": "پیش‌بینی کردن"
+  },
+  "prevail": {
+    "definition": "To prove more powerful or successful; to be widespread.",
+    "example": "Justice will prevail in the end.",
+    "phonetic": "prɪˈveɪl",
+    "pos": "verb",
+    "synonyms": [
+      "triumph",
+      "dominate"
+    ],
+    "translation": "غالب شدن؛ چیره شدن"
+  },
+  "previous": {
+    "definition": "Coming before the one in question; earlier.",
+    "example": "In the previous chapter, we discussed loops.",
+    "phonetic": "ˈpriːviəs",
+    "pos": "adjective",
+    "synonyms": [
+      "prior",
+      "earlier"
+    ],
+    "translation": "قبلی؛ پیشین"
+  },
+  "primary": {
+    "definition": "Of chief importance; the main one.",
+    "example": "Our primary goal is safety.",
+    "phonetic": "ˈpraɪmeri",
+    "pos": "adjective",
+    "synonyms": [
+      "main",
+      "principal"
+    ],
+    "translation": "اصلی؛ اولیه"
+  },
+  "prior": {
+    "definition": "Existing or coming before something else in time.",
+    "example": "She had no prior experience.",
+    "phonetic": "ˈpraɪər",
+    "pos": "adjective",
+    "synonyms": [
+      "previous",
+      "earlier"
+    ],
+    "translation": "قبلی؛ پیشین"
+  },
+  "problem": {
+    "definition": "A situation that needs to be solved or dealt with.",
+    "example": "We solved the math problem.",
+    "phonetic": "ˈprɑːbləm",
+    "pos": "noun",
+    "synonyms": [
+      "issue",
+      "difficulty"
+    ],
+    "translation": "مشکل؛ مسئله"
+  },
+  "proceed": {
+    "definition": "To continue with a course of action.",
+    "example": "Let's proceed to the next step.",
+    "phonetic": "prəˈsiːd",
+    "pos": "verb",
+    "synonyms": [
+      "continue",
+      "go ahead"
+    ],
+    "translation": "ادامه دادن؛ پیش رفتن"
+  },
+  "prohibit": {
+    "definition": "To formally forbid something by law or rule.",
+    "example": "Smoking is prohibited here.",
+    "phonetic": "proʊˈhɪbɪt",
+    "pos": "verb",
+    "synonyms": [
+      "forbid",
+      "ban"
+    ],
+    "translation": "ممنوع کردن"
+  },
+  "prominent": {
+    "definition": "Important or well-known; standing out.",
+    "example": "He is a prominent scientist.",
+    "phonetic": "ˈprɑːmɪnənt",
+    "pos": "adjective",
+    "synonyms": [
+      "notable",
+      "distinguished"
+    ],
+    "translation": "برجسته؛ مشهور"
+  },
+  "prospect": {
+    "definition": "The possibility of something happening in the future.",
+    "example": "There is little prospect of rain today.",
+    "phonetic": "ˈprɑːspekt",
+    "pos": "noun",
+    "synonyms": [
+      "possibility",
+      "outlook"
+    ],
+    "translation": "چشم‌انداز؛ احتمال"
+  },
+  "pursue": {
+    "definition": "To follow or try to achieve something over time.",
+    "example": "He decided to pursue a career in medicine.",
+    "phonetic": "pərˈsuː",
+    "pos": "verb",
+    "synonyms": [
+      "chase",
+      "follow"
+    ],
+    "translation": "دنبال کردن؛ پیگیری کردن"
+  },
+  "question": {
+    "definition": "A sentence used to ask for information.",
+    "example": "He asked a difficult question.",
+    "phonetic": "ˈkwestʃən",
+    "pos": "noun",
+    "synonyms": [
+      "query",
+      "inquiry"
+    ],
+    "translation": "سوال؛ پرسش"
+  },
+  "random": {
+    "definition": "Happening without any particular pattern or plan.",
+    "example": "The numbers were chosen at random.",
+    "phonetic": "ˈrændəm",
+    "pos": "adjective",
+    "synonyms": [
+      "arbitrary",
+      "chance"
+    ],
+    "translation": "تصادفی؛ اتفاقی"
+  },
+  "read": {
+    "definition": "To look at and understand written words.",
+    "example": "She reads every night before bed.",
+    "phonetic": "riːd",
+    "pos": "verb",
+    "synonyms": [
+      "peruse",
+      "study"
+    ],
+    "translation": "خواندن"
+  },
+  "reasonable": {
+    "definition": "Fair and sensible; within acceptable limits.",
+    "example": "That's a reasonable price.",
+    "phonetic": "ˈriːzənəbəl",
+    "pos": "adjective",
+    "synonyms": [
+      "sensible",
+      "fair"
+    ],
+    "translation": "معقول؛ منطقی"
+  },
+  "reject": {
+    "definition": "To refuse to accept or consider something.",
+    "example": "The committee rejected the proposal.",
+    "phonetic": "rɪˈdʒekt",
+    "pos": "verb",
+    "synonyms": [
+      "refuse",
+      "decline"
+    ],
+    "translation": "رد کردن"
+  },
+  "relevant": {
+    "definition": "Closely connected or appropriate to the matter at hand.",
+    "example": "That information isn't relevant here.",
+    "phonetic": "ˈreləvənt",
+    "pos": "adjective",
+    "synonyms": [
+      "pertinent",
+      "applicable"
+    ],
+    "translation": "مرتبط؛ مربوط"
+  },
+  "reliable": {
+    "definition": "Consistently good in quality or performance; trustworthy.",
+    "example": "He is a reliable friend.",
+    "phonetic": "rɪˈlaɪəbəl",
+    "pos": "adjective",
+    "synonyms": [
+      "dependable",
+      "trustworthy"
+    ],
+    "translation": "قابل اعتماد"
+  },
+  "reluctant": {
+    "definition": "Unwilling or hesitant to do something.",
+    "example": "He was reluctant to speak.",
+    "phonetic": "rɪˈlʌktənt",
+    "pos": "adjective",
+    "synonyms": [
+      "hesitant",
+      "unwilling"
+    ],
+    "translation": "بی‌میل؛ مردد؛ با اکراه"
+  },
+  "reluctantly": {
+    "definition": "In an unwilling or hesitant manner.",
+    "example": "She reluctantly agreed to help.",
+    "phonetic": "rɪˈlʌktəntli",
+    "pos": "adverb",
+    "synonyms": [
+      "hesitantly",
+      "unwillingly"
+    ],
+    "translation": "با بی‌میلی؛ با اکراه"
+  },
+  "remarkable": {
+    "definition": "Worthy of attention; extraordinary.",
+    "example": "She made remarkable progress.",
+    "phonetic": "rɪˈmɑːrkəbəl",
+    "pos": "adjective",
+    "synonyms": [
+      "extraordinary",
+      "notable"
+    ],
+    "translation": "قابل توجه؛ چشمگیر"
+  },
+  "remember": {
+    "definition": "To keep something in your memory.",
+    "example": "I remember my first day at school.",
+    "phonetic": "rɪˈmembər",
+    "pos": "verb",
+    "synonyms": [
+      "recall",
+      "recollect"
+    ],
+    "translation": "به یاد آوردن؛ یادآوری کردن"
+  },
+  "resolve": {
+    "definition": "To find a solution to a problem; to decide firmly.",
+    "example": "They resolved the dispute peacefully.",
+    "phonetic": "rɪˈzɑːlv",
+    "pos": "verb",
+    "synonyms": [
+      "settle",
+      "solve"
+    ],
+    "translation": "حل کردن؛ مصمم شدن"
+  },
+  "restrict": {
+    "definition": "To keep something within limits.",
+    "example": "Access to the file is restricted.",
+    "phonetic": "rɪˈstrɪkt",
+    "pos": "verb",
+    "synonyms": [
+      "limit",
+      "confine"
+    ],
+    "translation": "محدود کردن"
+  },
+  "reveal": {
+    "definition": "To make previously secret information known.",
+    "example": "He finally revealed his plan.",
+    "phonetic": "rɪˈviːl",
+    "pos": "verb",
+    "synonyms": [
+      "disclose",
+      "expose"
+    ],
+    "translation": "آشکار کردن؛ فاش کردن"
+  },
+  "right": {
+    "definition": "Correct, true, or morally good; also a direction.",
+    "example": "You are right about that.",
+    "phonetic": "raɪt",
+    "pos": "adjective/noun",
+    "synonyms": [
+      "correct",
+      "accurate"
+    ],
+    "translation": "درست؛ راست"
+  },
+  "rigid": {
+    "definition": "Not able to bend or be changed easily.",
+    "example": "The rules here are quite rigid.",
+    "phonetic": "ˈrɪdʒɪd",
+    "pos": "adjective",
+    "synonyms": [
+      "stiff",
+      "inflexible"
+    ],
+    "translation": "سفت؛ انعطاف‌ناپذیر"
+  },
+  "sad": {
+    "definition": "Feeling unhappy or showing sorrow.",
+    "example": "He felt sad after the movie.",
+    "phonetic": "sæd",
+    "pos": "adjective",
+    "synonyms": [
+      "unhappy",
+      "sorrowful"
+    ],
+    "translation": "غمگین؛ ناراحت"
+  },
+  "scarce": {
+    "definition": "Insufficient for the demand; hard to find.",
+    "example": "Clean water is scarce in the desert.",
+    "phonetic": "skers",
+    "pos": "adjective",
+    "synonyms": [
+      "rare",
+      "limited"
+    ],
+    "translation": "کمیاب؛ نایاب"
+  },
+  "school": {
+    "definition": "A place where children go to learn.",
+    "example": "The kids walk to school.",
+    "phonetic": "skuːl",
+    "pos": "noun",
+    "synonyms": [
+      "academy",
+      "college"
+    ],
+    "translation": "مدرسه"
+  },
+  "seek": {
+    "definition": "To try to find or obtain something.",
+    "example": "She is seeking a new job.",
+    "phonetic": "siːk",
+    "pos": "verb",
+    "synonyms": [
+      "search for",
+      "look for"
+    ],
+    "translation": "جستجو کردن؛ به دنبال بودن"
+  },
+  "shift": {
+    "definition": "A change in position, direction, or attitude.",
+    "example": "There has been a shift in public opinion.",
+    "phonetic": "ʃɪft",
+    "pos": "noun/verb",
+    "synonyms": [
+      "change",
+      "move"
+    ],
+    "translation": "تغییر؛ جابجایی"
+  },
+  "significant": {
+    "definition": "Sufficiently great or important to be worth attention.",
+    "example": "There has been a significant improvement.",
+    "phonetic": "sɪɡˈnɪfɪkənt",
+    "pos": "adjective",
+    "synonyms": [
+      "important",
+      "notable"
+    ],
+    "translation": "مهم؛ قابل توجه"
+  },
+  "simultaneous": {
+    "definition": "Happening or done at exactly the same time.",
+    "example": "The two events were simultaneous.",
+    "phonetic": "ˌsaɪmlˈteɪniəs",
+    "pos": "adjective",
+    "synonyms": [
+      "concurrent",
+      "synchronous"
+    ],
+    "translation": "همزمان"
+  },
+  "slow": {
+    "definition": "Not moving or happening quickly.",
+    "example": "The traffic was very slow.",
+    "phonetic": "sloʊ",
+    "pos": "adjective",
+    "synonyms": [
+      "sluggish",
+      "unhurried"
+    ],
+    "translation": "آهسته؛ کند"
+  },
+  "small": {
+    "definition": "Little in size, amount, or extent.",
+    "example": "She has a small car.",
+    "phonetic": "smɔːl",
+    "pos": "adjective",
+    "synonyms": [
+      "little",
+      "tiny"
+    ],
+    "translation": "کوچک"
+  },
+  "solve": {
+    "definition": "To find an answer to a problem.",
+    "example": "She solved the puzzle quickly.",
+    "phonetic": "sɑːlv",
+    "pos": "verb",
+    "synonyms": [
+      "resolve",
+      "work out"
+    ],
+    "translation": "حل کردن"
+  },
+  "sophisticated": {
+    "definition": "Highly developed or complex; refined.",
+    "example": "The software uses a sophisticated algorithm.",
+    "phonetic": "səˈfɪstɪkeɪtɪd",
+    "pos": "adjective",
+    "synonyms": [
+      "complex",
+      "advanced"
+    ],
+    "translation": "پیچیده؛ پیشرفته"
+  },
+  "speak": {
+    "definition": "To say words aloud; to talk.",
+    "example": "She can speak three languages.",
+    "phonetic": "spiːk",
+    "pos": "verb",
+    "synonyms": [
+      "talk",
+      "say"
+    ],
+    "translation": "صحبت کردن"
+  },
+  "stable": {
+    "definition": "Not likely to change or fail; firmly fixed.",
+    "example": "The economy remained stable.",
+    "phonetic": "ˈsteɪbəl",
+    "pos": "adjective",
+    "synonyms": [
+      "steady",
+      "secure"
+    ],
+    "translation": "پایدار؛ ثابت"
+  },
+  "start": {
+    "definition": "To begin doing something.",
+    "example": "Let's start the meeting.",
+    "phonetic": "stɑːrt",
+    "pos": "verb/noun",
+    "synonyms": [
+      "begin",
+      "commence"
+    ],
+    "translation": "شروع کردن؛ آغاز"
+  },
+  "straightforward": {
+    "definition": "Easy to understand or do; uncomplicated.",
+    "example": "The instructions were straightforward.",
+    "phonetic": "ˌstreɪtˈfɔːrwərd",
+    "pos": "adjective",
+    "synonyms": [
+      "simple",
+      "clear"
+    ],
+    "translation": "ساده؛ سرراست"
+  },
+  "strive": {
+    "definition": "To make great efforts to achieve something.",
+    "example": "We strive for excellence.",
+    "phonetic": "straɪv",
+    "pos": "verb",
+    "synonyms": [
+      "struggle",
+      "endeavor"
+    ],
+    "translation": "تلاش کردن؛ کوشیدن"
+  },
+  "student": {
+    "definition": "A person who is studying at a school or university.",
+    "example": "She is a university student.",
+    "phonetic": "ˈstuːdnt",
+    "pos": "noun",
+    "synonyms": [
+      "learner",
+      "pupil"
+    ],
+    "translation": "دانش‌آموز؛ دانشجو"
+  },
+  "study": {
+    "definition": "To spend time learning about a subject.",
+    "example": "She studies every night.",
+    "phonetic": "ˈstʌdi",
+    "pos": "verb",
+    "synonyms": [
+      "learn",
+      "review"
+    ],
+    "translation": "مطالعه کردن؛ درس خواندن"
+  },
+  "subsequent": {
+    "definition": "Coming after something in time; following.",
+    "example": "Subsequent tests confirmed the result.",
+    "phonetic": "ˈsʌbsɪkwənt",
+    "pos": "adjective",
+    "synonyms": [
+      "following",
+      "later"
+    ],
+    "translation": "بعدی؛ پس از آن"
+  },
+  "substantial": {
+    "definition": "Large in size, value, or importance.",
+    "example": "They made a substantial investment.",
+    "phonetic": "səbˈstænʃəl",
+    "pos": "adjective",
+    "synonyms": [
+      "considerable",
+      "significant"
+    ],
+    "translation": "قابل توجه؛ اساسی"
+  },
+  "sufficient": {
+    "definition": "Enough for a particular purpose.",
+    "example": "We have sufficient supplies for the trip.",
+    "phonetic": "səˈfɪʃənt",
+    "pos": "adjective",
+    "synonyms": [
+      "enough",
+      "adequate"
+    ],
+    "translation": "کافی"
+  },
+  "suspicious": {
+    "definition": "Having or showing a feeling that something is wrong.",
+    "example": "The police found the behavior suspicious.",
+    "phonetic": "səˈspɪʃəs",
+    "pos": "adjective",
+    "synonyms": [
+      "distrustful",
+      "wary"
+    ],
+    "translation": "مشکوک"
+  },
+  "sustain": {
+    "definition": "To keep something going over time; to support.",
+    "example": "The economy needs policies to sustain growth.",
+    "phonetic": "səˈsteɪn",
+    "pos": "verb",
+    "synonyms": [
+      "maintain",
+      "support"
+    ],
+    "translation": "حفظ کردن؛ نگه داشتن"
+  },
+  "teacher": {
+    "definition": "A person who helps students learn.",
+    "example": "My teacher explains things clearly.",
+    "phonetic": "ˈtiːtʃər",
+    "pos": "noun",
+    "synonyms": [
+      "instructor",
+      "educator"
+    ],
+    "translation": "معلم؛ آموزگار"
+  },
+  "tend": {
+    "definition": "To be likely to behave in a particular way.",
+    "example": "She tends to arrive early.",
+    "phonetic": "tend",
+    "pos": "verb",
+    "synonyms": [
+      "incline",
+      "lean"
+    ],
+    "translation": "تمایل داشتن؛ گرایش داشتن"
+  },
+  "thorough": {
+    "definition": "Complete with attention to every detail.",
+    "example": "They did a thorough inspection.",
+    "phonetic": "ˈθɜːroʊ",
+    "pos": "adjective",
+    "synonyms": [
+      "complete",
+      "meticulous"
+    ],
+    "translation": "دقیق؛ کامل"
+  },
+  "time": {
+    "definition": "The ongoing progress of events; a measured period.",
+    "example": "I don't have much time today.",
+    "phonetic": "taɪm",
+    "pos": "noun",
+    "synonyms": [
+      "period",
+      "duration"
+    ],
+    "translation": "زمان؛ وقت"
+  },
+  "tremendous": {
+    "definition": "Very great in amount, scale, or intensity.",
+    "example": "She made tremendous progress.",
+    "phonetic": "trɪˈmendəs",
+    "pos": "adjective",
+    "synonyms": [
+      "huge",
+      "enormous"
+    ],
+    "translation": "فوق‌العاده؛ عظیم"
+  },
+  "trigger": {
+    "definition": "An event that causes something to happen.",
+    "example": "Stress can trigger headaches.",
+    "phonetic": "ˈtrɪɡər",
+    "pos": "noun/verb",
+    "synonyms": [
+      "cause",
+      "set off"
+    ],
+    "translation": "محرک؛ راه انداختن"
+  },
+  "true": {
+    "definition": "In accordance with fact; not false.",
+    "example": "Is this story true?",
+    "phonetic": "truː",
+    "pos": "adjective",
+    "synonyms": [
+      "correct",
+      "accurate"
+    ],
+    "translation": "درست؛ صحیح"
+  },
+  "ugly": {
+    "definition": "Unpleasant to look at.",
+    "example": "The old building looked ugly.",
+    "phonetic": "ˈʌɡli",
+    "pos": "adjective",
+    "synonyms": [
+      "unattractive",
+      "hideous"
+    ],
+    "translation": "زشت"
+  },
+  "ultimate": {
+    "definition": "Being the final or most extreme point of something.",
+    "example": "Winning was our ultimate goal.",
+    "phonetic": "ˈʌltɪmət",
+    "pos": "adjective",
+    "synonyms": [
+      "final",
+      "eventual"
+    ],
+    "translation": "نهایی؛ غایی"
+  },
+  "underlying": {
+    "definition": "Being the true, often hidden, cause or basis of something.",
+    "example": "We need to address the underlying issue.",
+    "phonetic": "ˌʌndərˈlaɪɪŋ",
+    "pos": "adjective",
+    "synonyms": [
+      "fundamental",
+      "basic"
+    ],
+    "translation": "زیربنایی؛ اساسی"
+  },
+  "undermine": {
+    "definition": "To weaken something gradually.",
+    "example": "Constant criticism can undermine confidence.",
+    "phonetic": "ˌʌndərˈmaɪn",
+    "pos": "verb",
+    "synonyms": [
+      "weaken",
+      "erode"
+    ],
+    "translation": "تضعیف کردن"
+  },
+  "understand": {
+    "definition": "To know the meaning of something.",
+    "example": "Do you understand this lesson?",
+    "phonetic": "ˌʌndərˈstænd",
+    "pos": "verb",
+    "synonyms": [
+      "comprehend",
+      "grasp"
+    ],
+    "translation": "فهمیدن؛ درک کردن"
+  },
+  "unique": {
+    "definition": "Being the only one of its kind; unlike anything else.",
+    "example": "Every snowflake is unique.",
+    "phonetic": "juˈniːk",
+    "pos": "adjective",
+    "synonyms": [
+      "distinctive",
+      "one-of-a-kind"
+    ],
+    "translation": "منحصربه‌فرد"
+  },
+  "utilize": {
+    "definition": "To make practical use of something.",
+    "example": "We should utilize all available resources.",
+    "phonetic": "ˈjuːtəlaɪz",
+    "pos": "verb",
+    "synonyms": [
+      "use",
+      "employ"
+    ],
+    "translation": "استفاده کردن؛ به کار بردن"
+  },
+  "vague": {
+    "definition": "Not clearly expressed or defined.",
+    "example": "His answer was vague.",
+    "phonetic": "veɪɡ",
+    "pos": "adjective",
+    "synonyms": [
+      "unclear",
+      "ambiguous"
+    ],
+    "translation": "مبهم؛ نامشخص"
+  },
+  "valid": {
+    "definition": "Legally or logically acceptable; sound.",
+    "example": "That's a valid argument.",
+    "phonetic": "ˈvælɪd",
+    "pos": "adjective",
+    "synonyms": [
+      "sound",
+      "legitimate"
+    ],
+    "translation": "معتبر؛ درست"
+  },
+  "vary": {
+    "definition": "To be or become different; to change.",
+    "example": "Prices vary by region.",
+    "phonetic": "ˈveri",
+    "pos": "verb",
+    "synonyms": [
+      "differ",
+      "change"
+    ],
+    "translation": "متفاوت بودن؛ تغییر کردن"
+  },
+  "versatile": {
+    "definition": "Able to adapt to many different functions or activities.",
+    "example": "This tool is very versatile.",
+    "phonetic": "ˈvɜːrsətl",
+    "pos": "adjective",
+    "synonyms": [
+      "adaptable",
+      "flexible"
+    ],
+    "translation": "همه‌کاره؛ چندمنظوره"
+  },
+  "virtually": {
+    "definition": "Almost entirely; nearly.",
+    "example": "The project is virtually complete.",
+    "phonetic": "ˈvɜːrtʃuəli",
+    "pos": "adverb",
+    "synonyms": [
+      "almost",
+      "nearly"
+    ],
+    "translation": "تقریبا؛ عملا"
+  },
+  "vulnerable": {
+    "definition": "Easily hurt or affected physically or emotionally.",
+    "example": "Elderly people are more vulnerable to illness.",
+    "phonetic": "ˈvʌlnərəbəl",
+    "pos": "adjective",
+    "synonyms": [
+      "exposed",
+      "susceptible"
+    ],
+    "translation": "آسیب‌پذیر"
+  },
+  "want": {
+    "definition": "To desire or wish for something.",
+    "example": "She wants to learn English.",
+    "phonetic": "wɑːnt",
+    "pos": "verb",
+    "synonyms": [
+      "desire",
+      "wish"
+    ],
+    "translation": "خواستن"
+  },
+  "widespread": {
+    "definition": "Found or distributed over a large area or among many people.",
+    "example": "The problem is widespread across the country.",
+    "phonetic": "ˈwaɪdspred",
+    "pos": "adjective",
+    "synonyms": [
+      "extensive",
+      "pervasive"
+    ],
+    "translation": "گسترده؛ فراگیر"
+  },
+  "with": {
+    "definition": "Accompanied by; using; having or carrying.",
+    "example": "She went with Leo.",
+    "phonetic": "wɪð",
+    "pos": "preposition",
+    "synonyms": [
+      "alongside"
+    ],
+    "translation": "با؛ همراهِ؛ به‌وسیلهٔ"
+  },
+  "withstand": {
+    "definition": "To remain undamaged by a force or difficult situation.",
+    "example": "The building withstood the earthquake.",
+    "phonetic": "wɪðˈstænd",
+    "pos": "verb",
+    "synonyms": [
+      "endure",
+      "resist"
+    ],
+    "translation": "تحمل کردن؛ مقاومت کردن"
+  },
+  "word": {
+    "definition": "A single unit of language that has meaning.",
+    "example": "Can you spell this word?",
+    "phonetic": "wɜːrd",
+    "pos": "noun",
+    "synonyms": [
+      "term",
+      "expression"
+    ],
+    "translation": "کلمه؛ واژه"
+  },
+  "work": {
+    "definition": "An activity involving effort, or a job.",
+    "example": "He works every day.",
+    "phonetic": "wɜːrk",
+    "pos": "verb/noun",
+    "synonyms": [
+      "job",
+      "labor"
+    ],
+    "translation": "کار کردن؛ کار"
+  },
+  "write": {
+    "definition": "To form letters or words on a surface.",
+    "example": "He is writing a letter.",
+    "phonetic": "raɪt",
+    "pos": "verb",
+    "synonyms": [
+      "compose",
+      "note down"
+    ],
+    "translation": "نوشتن"
+  },
+  "wrong": {
+    "definition": "Not correct or not true; incorrect.",
+    "example": "That answer is wrong.",
+    "phonetic": "rɔːŋ",
+    "pos": "adjective",
+    "synonyms": [
+      "incorrect",
+      "mistaken"
+    ],
+    "translation": "غلط؛ اشتباه"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "accent": "us",
+  "rate": 0.95,
+  "pitch": 1,
+  "voiceURI": "",
+  "autoSpeak": false,
+  "onlineFallback": false,
+  "dailyNewLimit": 15,
+  "dailyReviewLimit": 60,
+  "intervals": [
+    1,
+    2,
+    3,
+    7,
+    14,
+    30,
+    60
+  ],
+  "theme": "crimson",
+  "onboarded": true,
+  "streak": 0,
+  "lastStudyDay": "",
+  "history": [
+    "presents",
+    "main",
+    "manx",
+    "man",
+    "file:///home/hosein/downloads/main.js",
+    "showers",
+    "file:///home/hosein/downloads/jhack-lingua-bridge-3.5.0"
+  ],
+  "cards": {},
+  "audioFilePath": "",
+  "audioFileName": "",
+  "audioData": "",
+  "audioMime": "",
+  "audioVolume": 1,
+  "highlightLeitnerWords": true,
+  "singleClickSelect": true,
+  "showSimilarWords": true,
+  "dailyProgress": {},
+  "pronunciationPractice": false
+}
