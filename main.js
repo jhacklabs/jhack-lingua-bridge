@@ -33,6 +33,8 @@ const DEFAULTS = {
   singleClickSelect: true,
   showSimilarWords: true,
   dailyProgress: {}, // { "2024-01-15": { added: 5, reviewed: 12 } }
+  dailyReminder: true, // one Notice per day if cards are due
+  lastReminderDay: "",
   useGoogleTranslate: true, // free, keyless translate.googleapis.com endpoint — tried before MyMemory
   userTranslations: {}, // words translated online get cached here, so they become offline-available from then on
   fetchWordImages: true // fetch a picture for each word from Wikipedia — online only, never saved to disk
@@ -1084,6 +1086,19 @@ class JhackLingua extends Plugin {
         this.persist();
       });
     }
+
+    this.app.workspace.onLayoutReady(() => this.checkDailyReminder());
+  }
+
+  /** Once per day, if there are cards due, a single Notice — same idea as the "you have cards due" nudge, just wired to this plugin's actual due-count logic instead of a separate tracker. */
+  checkDailyReminder() {
+    if (!this.settings.dailyReminder) return;
+    const today = todayStr();
+    if (this.settings.lastReminderDay === today) return;
+    const due = this.getDueCards().length;
+    if (due > 0) new Notice(`📚 You have ${due} card(s) due for review today.`);
+    this.settings.lastReminderDay = today;
+    this.persist();
   }
 
   onunload() {
@@ -2002,6 +2017,9 @@ class JhackSettings extends PluginSettingTab {
         const n = parseInt(v, 10);
         if (!isNaN(n) && n > 0) { this.plugin.settings.dailyReviewLimit = n; await this.plugin.persist(); }
       }));
+
+    new Setting(c).setName("Daily due-cards reminder").setDesc("Show one Notice per day if you have cards due for review.")
+      .addToggle((t) => t.setValue(this.plugin.settings.dailyReminder).onChange(async (v) => { this.plugin.settings.dailyReminder = v; await this.plugin.persist(); }));
 
     new Setting(c).setName("Import legacy Spaced Repetition deck").setDesc("One-time migration: scans your vault's #flashcards notes and copies cards into the new built-in Leitner system.")
       .addButton((b) => b.setButtonText("Import").onClick(() => this.plugin.importLegacyDeck()));
