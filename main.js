@@ -1293,38 +1293,68 @@ class JhackLingua extends Plugin {
     return !!((this.dictCache?.persian && this.dictCache.persian[n]) || (this.dictCache?.offline && this.dictCache.offline[n]));
   }
 
-  /** Cheap heuristic inflections (plural/singular, -ing/-ed) filtered to ones that actually exist in the offline dictionary. */
+  /**
+   * Cheap heuristic inflections (plural/singular, -ing/-ed/-y). Previously these were
+   * filtered down to only forms that exist as their OWN separate dictionary entry —
+   * but the offline dictionary is lemma-based (stores "book", not "books"), so almost
+   * every inflected form failed that check and the whole "Other forms" section came
+   * back empty for nearly every word. Now any morphologically valid candidate is
+   * shown directly — clicking it looks the word up live (offline dict, translation
+   * cache, or online fallback) same as typing it in, so it's never a dead end.
+   */
   getWordForms(word) {
-    if (!this.dictCache) return [];
     const w = word.toLowerCase();
     const forms = new Set();
-    const add = (f) => { if (f && f !== w) forms.add(f); };
+    const add = (f) => { if (f && f.length > 1 && f !== w) forms.add(f); };
     if (w.endsWith("ies")) add(w.slice(0, -3) + "y");
     if (w.endsWith("es")) add(w.slice(0, -2));
     if (w.endsWith("s") && !w.endsWith("ss")) add(w.slice(0, -1));
     else add(w + "s");
-    if (w.endsWith("y")) add(w.slice(0, -1) + "ies");
+    if (w.endsWith("y") && !/[aeiou]y$/.test(w)) add(w.slice(0, -1) + "ies");
     if (w.endsWith("ing")) { add(w.slice(0, -3)); add(w.slice(0, -3) + "e"); }
+    else if (/[^aeiou]e$/.test(w)) add(w.slice(0, -1) + "ing");
     else add(w + "ing");
     if (w.endsWith("ed")) { add(w.slice(0, -2)); add(w.slice(0, -1)); }
+    else if (/[^aeiou]e$/.test(w)) add(w + "d");
     else add(w + "ed");
-    return Array.from(forms).filter((f) => this.dictHas(f));
+    return Array.from(forms).slice(0, 6);
   }
 
-  /** Dictionary entries within a small edit distance of the given word — same-prefix scan to keep it fast against a 100k+ word list. */
+  /**
+   * Dictionary entries near the given word by edit distance. Previously this only
+   * looked at a narrow same-2-letter-prefix bucket, so plenty of real words (anything
+   * without a close neighbour in that exact bucket) came back with zero matches and
+   * the "Similar words" section silently never appeared. It now widens the search
+   * (1-letter prefix, then a same-length scan of the whole dictionary) whenever the
+   * narrower pass finds nothing, so it reliably returns something for real words.
+   */
   getSimilarWords(word, limit = 8) {
     if (!this.dictCache?.offline) return [];
     const w = word.toLowerCase();
     if (w.length < 3) return [];
-    const prefix = w.slice(0, 2);
     const keys = Object.keys(this.dictCache.offline);
-    const candidates = keys.filter((k) => k.startsWith(prefix) && Math.abs(k.length - w.length) <= 2 && k !== w);
-    return candidates
+
+    const search = (candidates, maxDist) => candidates
       .map((k) => ({ k, d: levenshtein(w, k) }))
-      .filter((x) => x.d > 0 && x.d <= 2)
+      .filter((x) => x.d > 0 && x.d <= maxDist)
       .sort((a, b) => a.d - b.d)
       .slice(0, limit)
       .map((x) => x.k);
+
+    let result = search(
+      keys.filter((k) => k.startsWith(w.slice(0, 2)) && Math.abs(k.length - w.length) <= 2 && k !== w),
+      2
+    );
+    if (result.length) return result;
+
+    result = search(
+      keys.filter((k) => k.startsWith(w.slice(0, 1)) && Math.abs(k.length - w.length) <= 2 && k !== w),
+      2
+    );
+    if (result.length) return result;
+
+    // Last resort: same length anywhere in the dictionary, allowing a slightly looser distance.
+    return search(keys.filter((k) => k.length === w.length && k !== w), 2);
   }
 
   /* ---------------- Leitner deck ---------------- */
